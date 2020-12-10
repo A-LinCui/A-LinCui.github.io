@@ -1,9 +1,9 @@
 # Site settings
 title: A-LinCui Blog
 SEOTitle:  A-LinCui Blog
-header-img: img/post-bg-desk.jpg
+header-img: img/desk.jpg
 email: zhaojb17@mails.tsinghua.edu.cn
-description: "Question the meaning of life."
+description: "Personal blog of A-LinCui"
 keyword: "A-LinCui, A-LinCui Blog, 林璀的博客, alincui"
 url: "http://A-LinCui.github.io.github.io"     # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
@@ -12,7 +12,7 @@ github_repo: "https://github.com/A-LinCui/A-LinCui.github.io.git" # you code rep
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "Goals determine what you going to be!"
+sidebar-about-description: "Question the meaning of life."
 sidebar-avatar: /img/personal_photo.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
