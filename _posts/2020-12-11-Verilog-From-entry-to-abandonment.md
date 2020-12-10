@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Verilogb: from Entry to Abandonment
+title:      Verilog ~ from Entry to Abandonment
 subtitle:   Verilog is too hard!
 date:       2020-12-11
 author:     A-LinCui
