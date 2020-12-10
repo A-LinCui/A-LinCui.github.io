@@ -4,7 +4,7 @@ title:      First Post
 subtitle:   Log on personal website for the first time
 date:       2020-12-10
 author:     A-LinCui
-header-img: img/post/night.jpg
+header-img: img/post/night.png
 catalog: true
 tags:
     - Scribble
