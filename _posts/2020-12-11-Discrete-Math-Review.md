@@ -94,5 +94,3 @@ tags:
 <div  align="center">    
  <img src="https://github.com/A-LinCui/A-LinCui.github.io/blob/master/img/post/Discrete_3.png" width = "250" height = "120" alt="Discrete_3" align=center />
 </div>
-
-* * ![](https://github.com/A-LinCui/A-LinCui.github.io/blob/master/img/post/Discrete_3.png) 
