@@ -92,5 +92,5 @@ tags:
 #### **5.5推理演算**
 - 5.5.1 推理规则
 <div  align="center">    
- <img src="img/post/../../../img/post/Discrete_3.png" width = "250" height = "120" alt="Discrete_3" align=center />
+ <img src="https://github.com/A-LinCui/A-LinCui.github.io/blob/master/img/post/Discrete_3.png" width = "250" height = "120" alt="Discrete_3" align=center />
 </div>
