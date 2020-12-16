@@ -63,8 +63,7 @@ tags:
   - 否定词可越过量词深入到量词的辖域内，但要把所越过的全程量词转换为存在量词，存在量词转换为全称量词。
 
 #### **5.2 量词分配等值式**
-![Discrete_1](img/post/../../../img/post/Discrete_1.png)
-
+ ![_](https://github.com/A-LinCui/A-LinCui.github.io/raw/master//img/post/Discrete_1.png)
 
 #### **5.3 范式**
 - 5.3.1 前束范式
