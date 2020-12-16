@@ -6,6 +6,7 @@ date:       2020-12-11
 author:     A-LinCui
 header-img: img/post/night.png
 catalog: true
+mathjax: true
 tags:
     - Math
 ---
