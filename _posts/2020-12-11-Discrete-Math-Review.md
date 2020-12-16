@@ -66,6 +66,9 @@ tags:
  <img src="img/post/../../../img/post/Discrete_1.png" width = "350" height = "400" alt="Discrete_1" align=center />
 </div>
 
+ <img src="img/post/../../../img/post/Discrete_1.png" width = "350" height = "400" alt="Discrete_1" align=center />
+
+
 #### **5.3 范式**
 - 5.3.1 前束范式
   - 说公式A是一个前束范式，如果A中的一切量词都位于该公式的最左边（不含否定词）且这些量词的辖域都延伸到公式的末端。
