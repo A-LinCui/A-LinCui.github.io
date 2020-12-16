@@ -66,7 +66,7 @@ tags:
  <img src="img/post/../../../img/post/Discrete_1.png" width = "350" height = "400" alt="Discrete_1" align=center />
 </div>
 
- <img src="img/post/../../../img/post/Discrete_1.png" width = "350" height = "400" alt="Discrete_1" align=center />
+![](img/post/../../../img/post/Discrete_1.png)
 
 
 #### **5.3 范式**
