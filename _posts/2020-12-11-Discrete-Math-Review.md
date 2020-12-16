@@ -61,10 +61,9 @@ tags:
   - 若将命题公式的等值式，直接以谓词公式代入命题变项便可得谓词等值式。
 - 5.1.2 否定型等值式
   - 否定词可越过量词深入到量词的辖域内，但要把所越过的全程量词转换为存在量词，存在量词转换为全称量词。
+
 #### **5.2 量词分配等值式**
-<div  align="center">    
- <img src="img/post/../../../img/post/Discrete_1.png" width = "350" height = "400" alt="Discrete_1" align=center />
-</div>
+
 
 ![](img/post/../../../img/post/Discrete_1.png)
 
