@@ -85,12 +85,8 @@ tags:
     - 对不可满足的公式，其与Skolem标准形是等值的，而一般的公式与Skolem标准形并不等值。
   
 #### **5.4 基本的推理公式**
-<div  align="center">
- <img src="https://github.com/A-LinCui/A-LinCui.github.io/blob/master/img/post/Discrete_2.png" width = "400" height = "300" alt="Discrete_2" align=center />
-</div>
+ ![_](https://github.com/A-LinCui/A-LinCui.github.io/raw/master//img/post/Discrete_2.png)
 
 #### **5.5推理演算**
 - 5.5.1 推理规则
-<div  align="center">    
- <img src="https://github.com/A-LinCui/A-LinCui.github.io/blob/master/img/post/Discrete_3.png" width = "250" height = "120" alt="Discrete_3" align=center />
-</div>
+ ![_](https://github.com/A-LinCui/A-LinCui.github.io/raw/master//img/post/Discrete_3.png)
