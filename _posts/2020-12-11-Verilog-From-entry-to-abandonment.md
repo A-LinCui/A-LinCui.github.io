@@ -47,5 +47,5 @@ tags:
 - Amount Manager Debug。current_state和next_state在S2处的跳转异常。待处理。
 - Testbench 在主initial函数内部，一定要先将CLK赋值，否则无法正常生成时钟信号。
 
-#### ***2020.12.17*
+#### **2020.12.17**
 - Amount Manger finished. 最后还剩键盘扫描电路和控制器待完成。
