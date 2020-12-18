@@ -10,6 +10,26 @@ tags:
     - Verilog
 ---
 
+#### **2020.12.18**
+- 昨晚发现键盘扫描电路在功能仿真下正常，但是在门级仿真下异常。在除`S5`状态下一切正常。但是当状态机跳转至`S5`时，`col`发生不明原因的抖动，联动外部信号`row`也发生变化，使得状态混乱，无法正常计时输出。百思不得其解，因为`col`本应仅在`current state`触发下时变化，在固定`S5`下不存在任何竞争冒险、过渡过程，而`next state`也不应变化。
+- 今天和助教debug一下午，将`next state`的触发换为clock前沿触发。代码如下。
+  ```
+  always@(posedge clk)
+  begin
+      case(current_state)
+          S0: next_state = (row == no_press)? S0:S1;
+          S1: next_state = (row == no_press)? S2:S5;
+          S2: next_state = (row == no_press)? S3:S5;
+          S3: next_state = (row == no_press)? S4:S5;
+          S4: next_state = (row == no_press)? S0:S5;
+          S5: next_state = (row == no_press)? S0:S5;
+      endcase
+  end
+  ```
+  但是在`confirm`输出下仍然存在问题，提示根本原因并未解决。意外获得助教特赦，验收时写死即可，因为他也弄不出来。
+- 晚上不甘心，继续一个人debug。尝试精简扫描电路逻辑，仅以行列BCD输出，意外通过时序仿真。功夫不负有心人。
+- 现在的正常时序仿真如下：
+  ![](https://github.com/A-LinCui/A-LinCui.github.io/raw/master//img/post/time_sim.png)
 
 #### **2020.12.10**
 - Quartus 2，modelsim和Altera联合仿真时，记得``Settings/EDA Tol Settings/Simulation``填写testbench的时候，Name和Top Level Module都写testbench里面的最顶层module名，如``standard_7448_tb``。
