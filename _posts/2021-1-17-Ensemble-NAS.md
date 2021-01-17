@@ -12,6 +12,7 @@ tags:
 ---
 
 ## **Ensemble Learning**
+
 | Class | Paper | Year |
 |:----:|:----:|:----:|
 | Ensemble Pattern | [Simple and Scalable Predictive Uncertainty Estimation using Deep Ensembles](https://arxiv.org/abs/1612.01474) | 2016 |
