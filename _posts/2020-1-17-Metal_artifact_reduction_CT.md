@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Metal artifact reduction for Medical CT
+title:      Metal Artifact Reduction for Medical CT
 subtitle:   Undergraduate Graduation Project
 date:       2021-1-17
 author:     A-LinCui
