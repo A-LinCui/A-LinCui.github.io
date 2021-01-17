@@ -18,14 +18,14 @@ tags:
 | Ensemble NAS | [Neural Ensemble Search for Performant and Calibrated Predictions](https://arxiv.org/abs/2006.08573) | 2020 |
 
 
-### Ensemble Patterns
-#### Deep Ensemble
+#### Ensemble Patterns
+##### Deep Ensemble
 固定一个架构，不同的初始化训练多个模型，然后集成在一起。
 
-### Ensemble Loss
 #### Ensemble Loss
+##### Ensemble Loss 
 $l(F(x),y), F(x)=\frac{1}{M}{\sum_{i=1}^M}f_{\theta_i}(x)$ 
-#### Average Base Learner Loss
+##### Average Base Learner Loss
 $\frac{1}{M}{\sum_{i=1}^M}l(f_{\theta_i}(x),y)$ 
-#### Oracle Ensemble Loss
+##### Oracle Ensemble Loss
 $l(F_{OE}(x),y), F_{OE}(x)=f_{\theta_k}(x)$, where $k\in \mathop{argmin}\limits_{i}l(f_{\theta_i}(x),y)$
