@@ -16,6 +16,8 @@ tags:
 |:----:|:----:|:----:|
 | Ensemble Pattern | [Simple and Scalable Predictive Uncertainty Estimation using Deep Ensembles](https://arxiv.org/abs/1612.01474) | 2016 |
 | Ensemble NAS | [Neural Ensemble Search for Performant and Calibrated Predictions](https://arxiv.org/abs/2006.08573) | 2020 |
+
+
 ### **Ensemble Patterns**
 #### **Deep Ensemble**
 固定一个架构，不同的初始化训练多个模型，然后集成在一起。
