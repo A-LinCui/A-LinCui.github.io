@@ -6,6 +6,7 @@ date:       2021-1-17
 author:     A-LinCui
 header-img: img/post/night.png
 catalog: true
+mathjax: true
 tags:
     - NAS
 ---
