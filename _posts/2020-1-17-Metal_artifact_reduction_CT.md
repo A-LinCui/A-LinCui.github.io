@@ -11,7 +11,7 @@ tags:
     - Deep Learning
 ---
 
-#### Paper list
+### Paper list
 
 | Domain | Year | Paper |
 |:----:|:----:|:----:|
@@ -20,9 +20,15 @@ tags:
 | | 2016 | [Image Prediction for Limited-angle Tomography via Deep Learning with Convolutional Neural Network](https://arxiv.org/abs/1607.08707) |
 | Image | 2019 | [Generative Mask Pyramid Network for CT/CBCT Metal Artifact Reduction with Joint Projection-Sinogram Correction](https://arxiv.org/abs/1907.00294) |
 | Image | 2019 | [Metal artifact reduction for practical dental computed tomography by improving interpolation‐based reconstruction with deep learning](https://aapm.onlinelibrary.wiley.com/doi/10.1002/mp.13644) |
+ Image | 2020 | [Unsupervised domain adaptation for practical metal artefact reduction in X-ray CT]() |
 
+### Challenges
+#### Different distribution of simulated dada and practical data
+Lack of practical data, simulated data is always required, especially for supervised learning. However, due to the complicated physical process, data directly simulated with metal artefact always lies in different distribution, leading to pool generalization ability of trained models.
+
+### Papers
 #### [Metal artifact reduction for practical dental computed tomography by improving interpolation‐based reconstruction with deep learning](https://aapm.onlinelibrary.wiley.com/doi/10.1002/mp.13644)
-- **Motivation**: The problem is that a deep learning network trained with simulation data often cannot be transferred to practical applications. The key idea is, instead of directly simulating images containing metal artifacts, this method simulates images containing interpolation artifacts by replacing data related to metal fillings with interpolation.
+- **Abstract**: To solve the problem caused by different distribution between directly simulated data and practical data, replace data  related to metal fillings with interpolation both in training process and inference process. Therefore, the complicated physical process is bypassed and the distribution becomes near.
 - **Dataset Simulation**
   - High-quality metal-free images were chosen.
   - Metal fillings were manually randomly added on the teeth.
@@ -37,3 +43,7 @@ tags:
   - Recognize metal-related projections in a sinogram by image-domain thresholding and do bilinear interpolation for these projections.
   - Analytically develop a preliminary reconstruction from the interpolated sinogram.
   - Use a trained deep learning network to remove the artifacts in the preliminary reconstruction and recover the nonmetal information. 
+- **Shortcomings**: May introduce new artefacts or wrong structure in the situation of multiple metals or inaccurate segmentation. 
+
+#### [Unsupervised domain adaptation for practical metal artefact reduction in X-ray CT]()
+- **Abstract**: Model the different distribution problem as a domain-invariant problem and solve it by domain-invariant adaption. A domain classifier is applied to classify source domain and target domain, with the features from the shallow layers of the MAR network as inputs. And the corresponding regularization term is added to the original supervised loss term to close the distance between two domains.
