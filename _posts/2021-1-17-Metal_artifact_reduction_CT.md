@@ -47,3 +47,6 @@ Lack of practical data, simulated data is always required, especially for superv
 
 #### [Unsupervised domain adaptation for practical metal artefact reduction in X-ray CT]()
 - **Abstract**: Model the different distribution problem as a domain-invariant problem and solve it by domain-invariant adaption. A domain classifier is applied to classify source domain and target domain, with the features from the shallow layers of the MAR network as inputs. And the corresponding regularization term is added to the original supervised loss term to close the distance between two domains.
+- **Formulation**: 
+  - $\Phi(\theta_R) = \overset{N_S}{\mathop{\sum}\limits_{n=1}}{||R(\mu_n^{a,S};\theta_R)-\mu_n^*||}_1 + \lambda\varphi^{DD}(\mathcal{S},\mathcal{T};\theta_R)$
+  - $\hat{\theta}_R=\mathop{argmin}\limits_{\theta_R}\Phi(\theta_R)$
