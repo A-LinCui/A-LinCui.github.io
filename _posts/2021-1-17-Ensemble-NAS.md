@@ -40,4 +40,14 @@ tags:
   - **Directly Optimizing for Model Averaging**: Optimize the performance of the corresponding Ensemble-Mean loss during training.  
     - [Explicitly optimizing for the performance of Ensemble-Mean does worse than averaging independently trained models. This may be due to two problems: **lack of diversity** and **numerical instability**.](https://arxiv.org/abs/1511.06314)
   - **Adding Diversity via Multiple Choice Learning**:  Consider a set of predictors $\{\theta_1,...,\theta_M \}$ such that $\theta_m: x \rightarrow P$ where P is a probability distribution over some set of labels. $L_{set}(x,y) = \mathop{min}\limits_{m \in [1,M]} l(\theta_m(x),y)$
-  
+
+#### Whimsicality
+- **Idea 1**
+  - **Asumption**: Logit domain information is consistent for each sub-architecture in the one-shot model with itself after seperately trained.
+  - **Method**: Classify candidate architectures into several classes clustering in advance. Sample sub-architectures separately in each class during the search.
+- **Idea 2**
+  - **Asumption**: The gap between the different architecture domains is mainly caused by the upper topology.
+  - **Method**: Search for a parameter-sharing treeNet with only the upper-topologies different.
+- **Idea 3**
+  - **Asumption**: Distance between archiectures indicates distance between their domain.
+  - **Method**: Search with the guidance of topology distance.
