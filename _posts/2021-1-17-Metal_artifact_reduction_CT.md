@@ -50,3 +50,6 @@ Lack of practical data, simulated data is always required, especially for superv
 - **Formulation**: 
   - $\Phi(\theta_R) = \overset{N_S}{\mathop{\sum}\limits_{n=1}}{\|\|R(\mu_n^{a,S};\theta_R)-\mu_n^*\|\|}_1 + \lambda\varphi^{DD}(\mathcal{S},\mathcal{T};\theta_R)$
   - $\hat{\theta_R} = \mathop{argmin}\limits_{\theta_R} \Phi(\theta_R)$
+
+#### [Generative Mask Pyramid Network for CT/CBCT Metal Artifact Reduction with Joint Projection-Sinogram Correction](https://arxiv.org/abs/1907.00294)
+- **Abstract**: Modulate the problem as an inpainting problem. Learn two GANs. The first GAN, enhenced with a mask pyramid network, called projection completion module, is used to inpaint the projection image at each angle. The second GAN, called sigogram correction module, is used to inpaint the total sigogram. The mask pyramid network is used to generate a mask that softly restrains the GAN to pay attention to metal area.
