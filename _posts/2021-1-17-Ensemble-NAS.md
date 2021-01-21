@@ -54,6 +54,7 @@ tags:
 - **Idea 3**
   - **Asumption**: Distance between archiectures indicates distance between their domain.
   - **Method**: Search with the guidance of topology distance.
+- **Idea 4**: **Differentiable!!!** Combine several darts one-shot model. In this way, combination pattern can be consistent in search and final process. 
 
 #### To be Discussed
 - Evolutionary search is much more efficient than random sampling in the one-shot model.
