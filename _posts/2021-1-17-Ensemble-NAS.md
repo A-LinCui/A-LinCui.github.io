@@ -13,11 +13,15 @@ tags:
 
 #### Ensemble Patterns
 - **Random Initialization**: Randomly initializing network weights.
-- **Bagging**: Randomly re-sampling dataset subsets.
-  - [Random initialization may not only be sufficient but preferred over bagging for deep networks given their large parameter space and the neccessity of large training data.](https://arxiv.org/abs/1511.06314)
 - **Architecture Diversity**: Ensemble networks with diverse architectures.
 - **Parameter Sharing**: A TreeNet is an ensemble consisting of zero or more shared initial layers, followed by a branching point and zero or more independent layers. During training, the shared layers above a branch receive gradient information from each child network, which are accumulated according to back-propagation. At test time, each path from root to leaf can be considered an independent network, except that redundant computations at the shared layers need not be performed.
-
+- **Stacking**: Stack ouputs of each sub-architecture.
+- **Voting**
+- **Boosting**: Serialize.The basic idea is to increase the weight of the samples that the previous base learner predicted wrong, so that the subsequent base learner pays more attention to these mislabeled samples and tries its best to correct these errors.T base learners are trained until the weighted combination of these T base learners is finally achieved.
+- **Bagging**
+- **Averaging**
+- **Weight Averaging**
+  
 #### Ensemble Loss
 - **Ensemble Estimating Loss**
   - **Ensemble Loss**：$l(F(x),y), F(x)=\frac{1}{M}{\sum_{i=1}^M}f_{\theta_i}(x)$ 
