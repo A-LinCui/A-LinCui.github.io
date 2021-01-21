@@ -11,21 +11,6 @@ tags:
     - NAS
 ---
 
-#### Paper list
-
-| Class | Year | Paper |
-|:----:|:----:|:----:|
-| Ensemble Pattern | 2010 | [Ore Grade Prediction Using a Genetic Algorithm and Clustering Based Ensemble Neural Network Model](https://link.springer.com/article/10.1007/s11004-010-9264-y) |
-| Ensemble Pattern | 2015 | [Why M Heads are Better than One: Training a Diverse Ensemble of Deep Networks](https://arxiv.org/abs/1511.06314) |
-| Ensemble Pattern | 2016 | [Simple and Scalable Predictive Uncertainty Estimation using Deep Ensembles](https://arxiv.org/abs/1612.01474) |
-| Ensemble Insights | 2003 | [Clustering ensembles of neural network models](https://www.sciencedirect.com/science/article/abs/pii/S0893608002001879?via%3Dihub) |
-| Ensemble NAS | 1996 | [Actively Searching for an Effective Neural-Network Ensemble](http://ftp.cs.wisc.edu/machine-learning/shavlik-group/opitz.consci96.pdf) |
-| Ensemble NAS | 2001 | [Genetic Algorithm based Selective Neural Network Ensemble](https://www.researchgate.net/publication/2517848_Genetic_Algorithm_based_Selective_Neural_Network_Ensemble) |
-| Ensemble NAS | 2018 | [Ensembles of Networks Produced from Neural Architecture Search](https://www.springerprofessional.de/en/ensembles-of-networks-produced-from-neural-architecture-search/18504652) |
-| Ensemble NAS | 2019 | [Improving Neural Architecture Search Image Classifiers via Ensemble Learning](https://arxiv.org/abs/1903.06236) |
-| Ensemble NAS | 2020 | [Neural Ensemble Search for Performant and Calibrated Predictions](https://arxiv.org/abs/2006.08573) |
-
-
 #### Ensemble Patterns
 - **Random Initialization**: Randomly initializing network weights.
 - **Bagging**: Randomly re-sampling dataset subsets.
@@ -54,6 +39,7 @@ tags:
 - The large ensembles of neural network models can be summarized with a relatively small number of representative models selected via clustering based on distances between model outputs.
 - The increased diversity of network structure in the ensemble produces increased diversity in predictions of the networks leading to improved ensemble performance.
 
+----------------
 #### Whimsicality
 - **Idea 1**
   - **Asumption**: Logit domain information is consistent for each sub-architecture in the one-shot model with itself after seperately trained.
@@ -72,3 +58,17 @@ tags:
 - **Development**
   - EnsembleFinalTrainer: Parallel training and joint training.
   - Different inner search spaces 
+  
+---------------
+
+| Class | Year | Paper |
+|:----:|:----:|:----:|
+| Ensemble Pattern | 2010 | [Ore Grade Prediction Using a Genetic Algorithm and Clustering Based Ensemble Neural Network Model](https://link.springer.com/article/10.1007/s11004-010-9264-y) |
+| Ensemble Pattern | 2015 | [Why M Heads are Better than One: Training a Diverse Ensemble of Deep Networks](https://arxiv.org/abs/1511.06314) |
+| Ensemble Pattern | 2016 | [Simple and Scalable Predictive Uncertainty Estimation using Deep Ensembles](https://arxiv.org/abs/1612.01474) |
+| Ensemble Insights | 2003 | [Clustering ensembles of neural network models](https://www.sciencedirect.com/science/article/abs/pii/S0893608002001879?via%3Dihub) |
+| Ensemble NAS | 1996 | [Actively Searching for an Effective Neural-Network Ensemble](http://ftp.cs.wisc.edu/machine-learning/shavlik-group/opitz.consci96.pdf) |
+| Ensemble NAS | 2001 | [Genetic Algorithm based Selective Neural Network Ensemble](https://www.researchgate.net/publication/2517848_Genetic_Algorithm_based_Selective_Neural_Network_Ensemble) |
+| Ensemble NAS | 2018 | [Ensembles of Networks Produced from Neural Architecture Search](https://www.springerprofessional.de/en/ensembles-of-networks-produced-from-neural-architecture-search/18504652) |
+| Ensemble NAS | 2019 | [Improving Neural Architecture Search Image Classifiers via Ensemble Learning](https://arxiv.org/abs/1903.06236) |
+| Ensemble NAS | 2020 | [Neural Ensemble Search for Performant and Calibrated Predictions](https://arxiv.org/abs/2006.08573) |
