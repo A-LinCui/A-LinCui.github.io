@@ -51,3 +51,11 @@ tags:
 - **Idea 3**
   - **Asumption**: Distance between archiectures indicates distance between their domain.
   - **Method**: Search with the guidance of topology distance.
+
+#### To be Discussed
+- Evolutionary search is much more efficient than random sampling in the one-shot model.
+- The correlationship between performance in the one-shot model and performance after training from scratch. Theory confirmation or empirical evidence.
+- How does the ensemble accuracies improve in one-shot model?
+- Development
+  - EnsembleFinalTrainer
+  - Different inner search spaces 
