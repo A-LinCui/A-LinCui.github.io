@@ -52,10 +52,11 @@ Lack of practical data, simulated data is always required, especially for superv
   - Artifact reduction with the trained CNN
   - Generation of a CNN prior image using tissue processing
   - Replacement of metal-affected projections with the forward projection of CNN prior, followed by the FBP reconstruction
-- Insights
+- **Insights**
   - Performance is correlated to model architectures. And with the increase of capacity, the performance tends to increase.
   - NAS can be applied.
   - The generalization of the method is bad for new types of metal artifacts. 
+- **Problem**: The working flow is rediculous to understand. Many unreasonable flows exist. 
   
 ---------------------
 ### Paper list
