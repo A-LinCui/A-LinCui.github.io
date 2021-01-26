@@ -11,16 +11,6 @@ tags:
     - Deep Learning
 ---
 
-### Paper list
-
-| Domain | Year | Paper |
-|:----:|:----:|:----:|
-| | 2016 | [Low-Dose CT via Deep Neural Network](https://arxiv.org/abs/1609.08508) | 
-| | 2016 | [Low-Dose CT with a Residual Encoder-Decoder Convolutional Neural Network (RED-CNN)](https://arxiv.org/abs/1702.00288v3) |
-| | 2016 | [Image Prediction for Limited-angle Tomography via Deep Learning with Convolutional Neural Network](https://arxiv.org/abs/1607.08707) |
-| Image | 2019 | [Generative Mask Pyramid Network for CT/CBCT Metal Artifact Reduction with Joint Projection-Sinogram Correction](https://arxiv.org/abs/1907.00294) |
-| Image | 2019 | [Metal artifact reduction for practical dental computed tomography by improving interpolation‐based reconstruction with deep learning](https://aapm.onlinelibrary.wiley.com/doi/10.1002/mp.13644) |
- Image | 2020 | [Unsupervised domain adaptation for practical metal artefact reduction in X-ray CT]() |
 
 ### Challenges
 #### Different distribution of simulated dada and practical data
@@ -53,3 +43,29 @@ Lack of practical data, simulated data is always required, especially for superv
 
 #### [Generative Mask Pyramid Network for CT/CBCT Metal Artifact Reduction with Joint Projection-Sinogram Correction](https://arxiv.org/abs/1907.00294)
 - **Abstract**: Modulate the problem as an inpainting problem. Learn two GANs. The first GAN, enhenced with a mask pyramid network, called projection completion module, is used to inpaint the projection image at each angle. The second GAN, called sigogram correction module, is used to inpaint the total sigogram. The mask pyramid network is used to generate a mask that softly restrains the GAN to pay attention to metal area.
+
+#### [Convolutional Neural Network Based Metal Artifact Reduction in X-ray Computed Tomography](https://arxiv.org/abs/1709.01581v2)
+- **Abstract**: Develop a convolutional neural network based open MAR framework, which fuses the information from the original and corrected images to suppress artifacts.
+- **Work Flow**:
+  - Metal trace segmentation
+  - Artifact reduction with the LI and BHC
+  - Artifact reduction with the trained CNN
+  - Generation of a CNN prior image using tissue processing
+  - Replacement of metal-affected projections with the forward projection of CNN prior, followed by the FBP reconstruction
+- Insights
+  - Performance is correlated to model architectures. And with the increase of capacity, the performance tends to increase.
+  - NAS can be applied.
+  - The generalization of the method is bad for new types of metal artifacts. 
+  
+---------------------
+### Paper list
+
+| Domain | Year | Paper |
+|:----:|:----:|:----:|
+| | 2016 | [Low-Dose CT via Deep Neural Network](https://arxiv.org/abs/1609.08508) | 
+| | 2016 | [Low-Dose CT with a Residual Encoder-Decoder Convolutional Neural Network (RED-CNN)](https://arxiv.org/abs/1702.00288v3) |
+| | 2016 | [Image Prediction for Limited-angle Tomography via Deep Learning with Convolutional Neural Network](https://arxiv.org/abs/1607.08707) |
+| Image | 2018 | [Convolutional Neural Network Based Metal Artifact Reduction in X-ray Computed Tomography](https://arxiv.org/abs/1709.01581v2) |
+| Image | 2019 | [Generative Mask Pyramid Network for CT/CBCT Metal Artifact Reduction with Joint Projection-Sinogram Correction](https://arxiv.org/abs/1907.00294) |
+| Image | 2019 | [Metal artifact reduction for practical dental computed tomography by improving interpolation‐based reconstruction with deep learning](https://aapm.onlinelibrary.wiley.com/doi/10.1002/mp.13644) |
+ Image | 2020 | [Unsupervised domain adaptation for practical metal artefact reduction in X-ray CT]() |
