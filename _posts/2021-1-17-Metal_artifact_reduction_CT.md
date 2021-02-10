@@ -70,3 +70,7 @@ Lack of practical data, simulated data is always required, especially for superv
 | Image | 2019 | [Generative Mask Pyramid Network for CT/CBCT Metal Artifact Reduction with Joint Projection-Sinogram Correction](https://arxiv.org/abs/1907.00294) |
 | Image | 2019 | [Metal artifact reduction for practical dental computed tomography by improving interpolation‐based reconstruction with deep learning](https://aapm.onlinelibrary.wiley.com/doi/10.1002/mp.13644) |
  Image | 2020 | [Unsupervised domain adaptation for practical metal artefact reduction in X-ray CT]() |
+
+---------------------
+### Server
+`ssh root@166.111.32.16 -p 30058`
