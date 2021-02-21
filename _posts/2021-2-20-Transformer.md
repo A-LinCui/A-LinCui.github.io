@@ -14,3 +14,6 @@ tags:
 
 ### Preface
 **Transformer**, has become a mainstream model in the NLP field, since first put forward in [Attention Is All You Need (2017)](https://arxiv.org/abs/1706.03762). With the self-attention mechanism as the core, the transformer naturally achieve better global awareness than CNNs, which may contribute to computer vision tasks and robustness.
+
+### Experiments
+#### It seems that VIT isn't inherently robust. But it may result from the poor performance on clean data.
