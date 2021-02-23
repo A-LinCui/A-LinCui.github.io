@@ -25,8 +25,8 @@ tags:
 - Auto loss.
 
 ### Schedule
-#### **2021.2.23-2021.3.1**: Construct the basic flow.
-#### **2021.2.23-2021.3.8**: First presentation. And determine which direction do work on.
+- **2021.2.23-2021.3.1**: Construct the basic flow.
+- **2021.2.23-2021.3.8**: First presentation. And determine which direction do work on.
 
 --------------------------------
 ### Papers
@@ -73,7 +73,8 @@ tags:
 
 #### [ADN: Artifact Disentanglement Network for Unsupervised Metal Artifact Reduction](https://arxiv.org/abs/1908.01104)
 - **Abstract**: The first article to introduce unsupervised learning.
-- **Problem**: The network is too complicate.
+- **Problem**: The network is too complicate. And without a strong supervision, ADN can hardly recover structural details in challenging
+cases.
 - **Code Available**: [https://github.com/liaohaofu/adn](https://github.com/liaohaofu/adn)
 
 #### [Regularized Three-dimensional Generative Adversarial Nets for Unsupervised Metal Artifact Reduction](https://arxiv.org/abs/1911.08105)
