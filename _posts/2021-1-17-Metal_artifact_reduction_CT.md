@@ -34,6 +34,30 @@ tags:
 
 --------------------------------
 ### Papers
+#### [Metal artifact reduction on cervical CT images by deep residual learning](https://link.springer.com/content/pdf/10.1186%2Fs12938-018-0609-y.pdf) 
+- **Method**: Just simulate data and train a CNN.
+
+#### [Convolutional Neural Network Based Metal Artifact Reduction in X-ray Computed Tomography](https://arxiv.org/abs/1709.01581v2)
+- **Abstract**: Develop a convolutional neural network based open MAR framework, which fuses the information from the original and corrected images to suppress artifacts.
+- **Work Flow**:
+  - Metal trace segmentation
+  - Artifact reduction with the LI and BHC
+  - Artifact reduction with the trained CNN
+  - Generation of a CNN prior image using tissue processing
+  - Replacement of metal-affected projections with the forward projection of CNN prior, followed by the FBP reconstruction
+- **Insights**
+  - Performance is correlated to model architectures. And with the increase of capacity, the performance tends to increase.
+  - NAS can be applied.
+  - The generalization of the method is bad for new types of metal artifacts. 
+- **Problem**: The working flow is rediculous to understand. Many unreasonable flows exist. 
+
+#### [Conditional Generative Adversarial Networks for Metal Artifact Reduction in CT Images of the Ear](https://pubmed.ncbi.nlm.nih.gov/30693351/)
+- **Method**: cGAN framework.
+- **Insight**: Architecture matters. 
+
+#### [Generative Mask Pyramid Network for CT/CBCT Metal Artifact Reduction with Joint Projection-Sinogram Correction](https://arxiv.org/abs/1907.00294)
+- **Abstract**: Modulate the problem as an inpainting problem. Learn two GANs. The first GAN, enhenced with a mask pyramid network, called projection completion module, is used to inpaint the projection image at each angle. The second GAN, called sigogram correction module, is used to inpaint the total sigogram. The mask pyramid network is used to generate a mask that softly restrains the GAN to pay attention to metal area.
+  
 #### [Metal artifact reduction for practical dental computed tomography by improving interpolation‐based reconstruction with deep learning](https://aapm.onlinelibrary.wiley.com/doi/10.1002/mp.13644)
 - **Abstract**: To solve the problem caused by different distribution between directly simulated data and practical data, replace data  related to metal fillings with interpolation both in training process and inference process. Therefore, the complicated physical process is bypassed and the distribution becomes near.
 - **Dataset Simulation**
@@ -52,29 +76,6 @@ tags:
   - Use a trained deep learning network to remove the artifacts in the preliminary reconstruction and recover the nonmetal information. 
 - **Shortcomings**: May introduce new artefacts or wrong structure in the situation of multiple metals or inaccurate segmentation. 
 
-#### [Unsupervised domain adaptation for practical metal artefact reduction in X-ray CT]()
-- **Abstract**: Model the different distribution problem as a domain-invariant problem and solve it by domain-invariant adaption. A domain classifier is applied to classify source domain and target domain, with the features from the shallow layers of the MAR network as inputs. And the corresponding regularization term is added to the original supervised loss term to close the distance between two domains.
-- **Formulation**: 
-  - $\Phi(\theta_R) = \overset{N_S}{\mathop{\sum}\limits_{n=1}}{\|\|R(\mu_n^{a,S};\theta_R)-\mu_n^*\|\|}_1 + \lambda\varphi^{DD}(\mathcal{S},\mathcal{T};\theta_R)$
-  - $\hat{\theta_R} = \mathop{argmin}\limits_{\theta_R} \Phi(\theta_R)$
-
-#### [Generative Mask Pyramid Network for CT/CBCT Metal Artifact Reduction with Joint Projection-Sinogram Correction](https://arxiv.org/abs/1907.00294)
-- **Abstract**: Modulate the problem as an inpainting problem. Learn two GANs. The first GAN, enhenced with a mask pyramid network, called projection completion module, is used to inpaint the projection image at each angle. The second GAN, called sigogram correction module, is used to inpaint the total sigogram. The mask pyramid network is used to generate a mask that softly restrains the GAN to pay attention to metal area.
-
-#### [Convolutional Neural Network Based Metal Artifact Reduction in X-ray Computed Tomography](https://arxiv.org/abs/1709.01581v2)
-- **Abstract**: Develop a convolutional neural network based open MAR framework, which fuses the information from the original and corrected images to suppress artifacts.
-- **Work Flow**:
-  - Metal trace segmentation
-  - Artifact reduction with the LI and BHC
-  - Artifact reduction with the trained CNN
-  - Generation of a CNN prior image using tissue processing
-  - Replacement of metal-affected projections with the forward projection of CNN prior, followed by the FBP reconstruction
-- **Insights**
-  - Performance is correlated to model architectures. And with the increase of capacity, the performance tends to increase.
-  - NAS can be applied.
-  - The generalization of the method is bad for new types of metal artifacts. 
-- **Problem**: The working flow is rediculous to understand. Many unreasonable flows exist. 
-
 #### [ADN: Artifact Disentanglement Network for Unsupervised Metal Artifact Reduction](https://arxiv.org/abs/1908.01104)
 - **Abstract**: The first article to introduce unsupervised learning.
 - **Problem**: The network is too complicate. And without a strong supervision, ADN can hardly recover structural details in challenging
@@ -85,6 +86,12 @@ cases.
 - **Abstract**: 3D, unsupervised.
 - **Volume-to-volume translation**: Translate volumn-to-volumn due to the poor performance on large global artifacts. It may result from the inherent weakness of CNNs. May apply transformer or other self-attention block?
 
+#### [Unsupervised domain adaptation for practical metal artefact reduction in X-ray CT]()
+- **Abstract**: Model the different distribution problem as a domain-invariant problem and solve it by domain-invariant adaption. A domain classifier is applied to classify source domain and target domain, with the features from the shallow layers of the MAR network as inputs. And the corresponding regularization term is added to the original supervised loss term to close the distance between two domains.
+- **Formulation**: 
+  - $\Phi(\theta_R) = \overset{N_S}{\mathop{\sum}\limits_{n=1}}{\|\|R(\mu_n^{a,S};\theta_R)-\mu_n^*\|\|}_1 + \lambda\varphi^{DD}(\mathcal{S},\mathcal{T};\theta_R)$
+  - $\hat{\theta_R} = \mathop{argmin}\limits_{\theta_R} \Phi(\theta_R)$
+
 #### [Adversarial Robust Training of Deep Learning MRI Reconstruction Models](https://arxiv.org/pdf/2011.00070.pdf)
 - **Abstract**: Adversarial attack. The adversarial perturbation is randomly searched. 
 - **Code Available**: [https://github.com/fcaliva/fastMRI_BB_abnormalities_annotation](https://github.com/fcaliva/fastMRI_BB_abnormalities_annotation)
@@ -92,13 +99,6 @@ cases.
 #### [Deep Sinogram Completion with Image Prior for Metal Artifact Reduction in CT Images](https://arxiv.org/abs/2009.07469)
 - **Method**: ![MAR1](https://github.com/A-LinCui/A-LinCui.github.io/raw/master//img/post/MAR_1.png)
 - **Comment**: Rediculous! It seems like model distillation substantially.
-
-#### [Conditional Generative Adversarial Networks for Metal Artifact Reduction in CT Images of the Ear](https://pubmed.ncbi.nlm.nih.gov/30693351/)
-- **Method**: cGAN framework.
-- **Insight**: Architecture matters. 
-
-#### [Metal artifact reduction on cervical CT images by deep residual learning](https://link.springer.com/content/pdf/10.1186%2Fs12938-018-0609-y.pdf) 
-- **Method**: Just simulate data and train a CNN.
 
 ---------------------
 ### Paper list
