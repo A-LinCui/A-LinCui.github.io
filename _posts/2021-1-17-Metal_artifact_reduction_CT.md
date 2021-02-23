@@ -25,8 +25,11 @@ tags:
 - Auto loss.
 
 ### Schedule
-- **2021.2.23-2021.3.1**: Construct the basic flow.
-- **2021.2.23-2021.3.8**: First presentation. And determine which direction do work on.
+- **2021.2.23-2021.3.1**
+  - Construct the basic flow.
+- **2021.2.23-2021.3.8**
+  - First presentation. 
+  - Determine which direction do work on.
 
 --------------------------------
 ### Papers
@@ -87,7 +90,7 @@ cases.
 
 #### [Deep Sinogram Completion with Image Prior for Metal Artifact Reduction in CT Images](https://arxiv.org/abs/2009.07469)
 - **Method**: ![MAR1](https://github.com/A-LinCui/A-LinCui.github.io/raw/master//img/post/MAR_1.png)
-- **Comment**: Rediculous!
+- **Comment**: Rediculous! It seems like model distillation substantially.
   
 ---------------------
 ### Paper list
