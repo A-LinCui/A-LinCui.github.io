@@ -15,9 +15,11 @@ tags:
 ### Challenges
 #### Different distribution of simulated dada and practical data
 - Lack of practical data. Simulated data is always required, especially for supervised learning. However, due to the complicated physical process, data directly simulated with metal artefact always lies in different distribution, leading to pool generalization ability of trained models.
+- For unsupervised learning. The GANs cannot perfectly module the actual distribution, causing loss on real structures. And a large number of hyper-parameters need to be to adjusted manually, reducing their feasibility and reasonabily.
 
 ### Whimsicality
 - NAS for better architectures. Some article did report the performance is correlated with the architecture.
+- Combine with adversarial attack to module small perturbation. It has been implemented in an article. However, the perturbation is randomly searched. We may apply other adversaries.
 - Transformer for better global information extraction.
 - Distillation / Mutual learning.
 - Auto loss.
@@ -74,7 +76,10 @@ tags:
 - **Abstract**: 3D, unsupervised.
 - **Volume-to-volume translation**: Translate volumn-to-volumn due to the poor performance on large global artifacts. It may result from the inherent weakness of CNNs. May apply transformer or other self-attention block?
 
-
+#### [Adversarial Robust Training of Deep Learning MRI Reconstruction Models](https://arxiv.org/pdf/2011.00070.pdf)
+- **Abstract**: Adversarial attack. The adversarial perturbation is randomly searched. 
+- **Code Available**: [https://github.com/fcaliva/fastMRI_BB_abnormalities_annotation](https://github.com/fcaliva/fastMRI_BB_abnormalities_annotation)
+  
 ---------------------
 ### Paper list
 
@@ -87,8 +92,9 @@ tags:
 | 2019 | Unsupervised | Image | [Generative Mask Pyramid Network for CT/CBCT Metal Artifact Reduction with Joint Projection-Sinogram Correction](https://arxiv.org/abs/1907.00294) |
 | 2019 | Supervised | Image | [Metal artifact reduction for practical dental computed tomography by improving interpolation‐based reconstruction with deep learning](https://aapm.onlinelibrary.wiley.com/doi/10.1002/mp.13644) |
 | 2019 | Unsupervised | Image | [ADN: Artifact Disentanglement Network for Unsupervised Metal Artifact Reduction](https://arxiv.org/abs/1908.01104) |
-| 2020 | Unsupervised | Image  | [Unsupervised domain adaptation for practical metal artefact reduction in X-ray CT]() |
 | 2019 | Unsupervised | Image | [Regularized Three-dimensional Generative Adversarial Nets for Unsupervised Metal Artifact Reduction](https://arxiv.org/abs/1911.08105) |
+| 2020 | Unsupervised | Image  | [Unsupervised domain adaptation for practical metal artefact reduction in X-ray CT]() |
+| 2020 | Supervised | Image | [Adversarial Robust Training of Deep earning MRI Reconstruction Models](https://arxiv.org/pdf/2011.00070.pdf) |
 
 ---------------------
 ### Server
