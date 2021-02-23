@@ -14,8 +14,15 @@ tags:
 
 ### Challenges
 #### Different distribution of simulated dada and practical data
-Lack of practical data, simulated data is always required, especially for supervised learning. However, due to the complicated physical process, data directly simulated with metal artefact always lies in different distribution, leading to pool generalization ability of trained models.
+- Lack of practical data. Simulated data is always required, especially for supervised learning. However, due to the complicated physical process, data directly simulated with metal artefact always lies in different distribution, leading to pool generalization ability of trained models.
 
+### Whimsicality
+- NAS for better architectures. Some article did report the performance is correlated with the architecture.
+- Transformer for better global information extraction.
+- Distillation / Mutual learning.
+- Auto loss.
+
+--------------------------------
 ### Papers
 #### [Metal artifact reduction for practical dental computed tomography by improving interpolation‐based reconstruction with deep learning](https://aapm.onlinelibrary.wiley.com/doi/10.1002/mp.13644)
 - **Abstract**: To solve the problem caused by different distribution between directly simulated data and practical data, replace data  related to metal fillings with interpolation both in training process and inference process. Therefore, the complicated physical process is bypassed and the distribution becomes near.
@@ -63,20 +70,25 @@ Lack of practical data, simulated data is always required, especially for superv
 - **Problem**: The network is too complicate.
 - **Code Available**: [https://github.com/liaohaofu/adn](https://github.com/liaohaofu/adn)
 
+#### [Regularized Three-dimensional Generative Adversarial Nets for Unsupervised Metal Artifact Reduction]()
+- **Abstract**: 3D, unsupervised.
+- **Volume-to-volume translation**: Translate volumn-to-volumn due to the poor performance on large global artifacts. It may result from the inherent weakness of CNNs. May apply transformer or other self-attention block?
+
 
 ---------------------
 ### Paper list
 
-| Domain | Year | Paper |
-|:----:|:----:|:----:|
-| | 2016 | [Low-Dose CT via Deep Neural Network](https://arxiv.org/abs/1609.08508) | 
-| | 2016 | [Low-Dose CT with a Residual Encoder-Decoder Convolutional Neural Network (RED-CNN)](https://arxiv.org/abs/1702.00288v3) |
-| | 2016 | [Image Prediction for Limited-angle Tomography via Deep Learning with Convolutional Neural Network](https://arxiv.org/abs/1607.08707) |
-| Image | 2018 | [Convolutional Neural Network Based Metal Artifact Reduction in X-ray Computed Tomography](https://arxiv.org/abs/1709.01581v2) |
-| Image | 2019 | [Generative Mask Pyramid Network for CT/CBCT Metal Artifact Reduction with Joint Projection-Sinogram Correction](https://arxiv.org/abs/1907.00294) |
-| Image | 2019 | [Metal artifact reduction for practical dental computed tomography by improving interpolation‐based reconstruction with deep learning](https://aapm.onlinelibrary.wiley.com/doi/10.1002/mp.13644) |
-| Image | 2019 | [ADN: Artifact Disentanglement Network for Unsupervised Metal Artifact Reduction](https://arxiv.org/abs/1908.01104) |
- Image | 2020 | [Unsupervised domain adaptation for practical metal artefact reduction in X-ray CT]() |
+| Year | Type | Domain | Paper |
+|:----:|:----:|:----:|:----:|
+| 2016 | | | [Low-Dose CT via Deep Neural Network](https://arxiv.org/abs/1609.08508) | 
+| 2016 | | | [Low-Dose CT with a Residual Encoder-Decoder Convolutional Neural Network (RED-CNN)](https://arxiv.org/abs/1702.00288v3) |
+| 2016 | | | [Image Prediction for Limited-angle Tomography via Deep Learning with Convolutional Neural Network](https://arxiv.org/abs/1607.08707) |
+| 2018 | Supervised | Image | [Convolutional Neural Network Based Metal Artifact Reduction in X-ray Computed Tomography](https://arxiv.org/abs/1709.01581v2) |
+| 2019 | Unsupervised | Image | [Generative Mask Pyramid Network for CT/CBCT Metal Artifact Reduction with Joint Projection-Sinogram Correction](https://arxiv.org/abs/1907.00294) |
+| 2019 | Supervised | Image | [Metal artifact reduction for practical dental computed tomography by improving interpolation‐based reconstruction with deep learning](https://aapm.onlinelibrary.wiley.com/doi/10.1002/mp.13644) |
+| 2019 | Unsupervised | Image | [ADN: Artifact Disentanglement Network for Unsupervised Metal Artifact Reduction](https://arxiv.org/abs/1908.01104) |
+| 2020 | Unsupervised | Image  | [Unsupervised domain adaptation for practical metal artefact reduction in X-ray CT]() |
+| 2019 | Unsupervised | Image | [Regularized Three-dimensional Generative Adversarial Nets for Unsupervised Metal Artifact Reduction](https://arxiv.org/abs/1911.08105) |
 
 ---------------------
 ### Server
