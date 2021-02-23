@@ -80,8 +80,8 @@ tags:
 - **Abstract**: Adversarial attack. The adversarial perturbation is randomly searched. 
 - **Code Available**: [https://github.com/fcaliva/fastMRI_BB_abnormalities_annotation](https://github.com/fcaliva/fastMRI_BB_abnormalities_annotation)
 
-#### [Deep Sinogram Completion with Image Prior for Metal Artifact Reduction in CT Images](https://arxiv.org/abs/2009.07469) |
-- **Method**: ![](../img/post/MAR_1.png)
+#### [Deep Sinogram Completion with Image Prior for Metal Artifact Reduction in CT Images](https://arxiv.org/abs/2009.07469)
+- **Method**: ![MAR1](https://github.com/A-LinCui/A-LinCui.github.io/raw/master//img/post/MAR_1.png)
 - **Comment**: Rediculous!
   
 ---------------------
