@@ -23,6 +23,7 @@ tags:
 - Transformer for better global information extraction.
 - Distillation / Mutual learning.
 - Auto loss.
+- ~~Change data simulation methods. Hopeless.~~
 
 ### Schedule
 - **2021.2.23-2021.3.1**
@@ -91,16 +92,26 @@ cases.
 #### [Deep Sinogram Completion with Image Prior for Metal Artifact Reduction in CT Images](https://arxiv.org/abs/2009.07469)
 - **Method**: ![MAR1](https://github.com/A-LinCui/A-LinCui.github.io/raw/master//img/post/MAR_1.png)
 - **Comment**: Rediculous! It seems like model distillation substantially.
-  
+
+#### [Conditional Generative Adversarial Networks for Metal Artifact Reduction in CT Images of the Ear](https://pubmed.ncbi.nlm.nih.gov/30693351/)
+- **Method**: cGAN framework.
+- **Insight**: Architecture matters. 
+
+#### [Metal artifact reduction on cervical CT images by deep residual learning](https://link.springer.com/content/pdf/10.1186%2Fs12938-018-0609-y.pdf) 
+- **Method**: Just simulate data and train a CNN.
+
 ---------------------
 ### Paper list
 
 | Year | Type | Domain | Paper |
 |:----:|:----:|:----:|:----:|
+| 2016 | Survey | - | [Metal Artifact Reduction in CT: Where Are We After Four Decades?](https://ieeexplore.ieee.org/document/7565564/metrics) |
 | 2016 | | | [Low-Dose CT via Deep Neural Network](https://arxiv.org/abs/1609.08508) | 
 | 2016 | | | [Low-Dose CT with a Residual Encoder-Decoder Convolutional Neural Network (RED-CNN)](https://arxiv.org/abs/1702.00288v3) |
 | 2016 | | | [Image Prediction for Limited-angle Tomography via Deep Learning with Convolutional Neural Network](https://arxiv.org/abs/1607.08707) |
+| 2018 | Supervised | Image | [Metal artifact reduction on cervical CT images by deep residual learning](https://link.springer.com/content/pdf/10.1186%2Fs12938-018-0609-y.pdf) |
 | 2018 | Supervised | Image | [Convolutional Neural Network Based Metal Artifact Reduction in X-ray Computed Tomography](https://arxiv.org/abs/1709.01581v2) |
+| 2018 | Unsupervised | Image | [Conditional Generative Adversarial Networks for Metal Artifact Reduction in CT Images of the Ear](https://pubmed.ncbi.nlm.nih.gov/30693351/) |
 | 2019 | Unsupervised | Image | [Generative Mask Pyramid Network for CT/CBCT Metal Artifact Reduction with Joint Projection-Sinogram Correction](https://arxiv.org/abs/1907.00294) |
 | 2019 | Supervised | Image | [Metal artifact reduction for practical dental computed tomography by improving interpolation‐based reconstruction with deep learning](https://aapm.onlinelibrary.wiley.com/doi/10.1002/mp.13644) |
 | 2019 | Unsupervised | Image | [ADN: Artifact Disentanglement Network for Unsupervised Metal Artifact Reduction](https://arxiv.org/abs/1908.01104) |
