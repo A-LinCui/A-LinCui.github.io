@@ -57,7 +57,11 @@ Lack of practical data, simulated data is always required, especially for superv
   - NAS can be applied.
   - The generalization of the method is bad for new types of metal artifacts. 
 - **Problem**: The working flow is rediculous to understand. Many unreasonable flows exist. 
-  
+
+#### [ADN: Artifact Disentanglement Network for Unsupervised Metal Artifact Reduction](https://arxiv.org/abs/1908.01104)
+- **Abstract**: The first article to introduce unsupervised learning.
+- **Problem**: The network is too complicate.
+- **[Code](https://github.com/liaohaofu/adn) Available**
 ---------------------
 ### Paper list
 
