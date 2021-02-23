@@ -24,6 +24,10 @@ tags:
 - Distillation / Mutual learning.
 - Auto loss.
 
+### Schedule
+#### **2021.2.23-2021.3.1**: Construct the basic flow.
+#### **2021.2.23-2021.3.8**: First presentation. And determine which direction do work on.
+
 --------------------------------
 ### Papers
 #### [Metal artifact reduction for practical dental computed tomography by improving interpolation‐based reconstruction with deep learning](https://aapm.onlinelibrary.wiley.com/doi/10.1002/mp.13644)
@@ -99,7 +103,7 @@ tags:
 | 2019 | Unsupervised | Image | [Regularized Three-dimensional Generative Adversarial Nets for Unsupervised Metal Artifact Reduction](https://arxiv.org/abs/1911.08105) |
 | 2020 | Unsupervised | Image  | [Unsupervised domain adaptation for practical metal artefact reduction in X-ray CT]() |
 | 2020 | Supervised | Image | [Adversarial Robust Training of Deep earning MRI Reconstruction Models](https://arxiv.org/pdf/2011.00070.pdf) |
-| 2020 | | Image & Sinogram | [Deep Sinogram Completion with Image Prior for Metal Artifact Reduction in CT Images](https://arxiv.org/abs/2009.07469) |
+| 2020 | Supervised | Image & Sinogram | [Deep Sinogram Completion with Image Prior for Metal Artifact Reduction in CT Images](https://arxiv.org/abs/2009.07469) |
 
 ---------------------
 ### Server
