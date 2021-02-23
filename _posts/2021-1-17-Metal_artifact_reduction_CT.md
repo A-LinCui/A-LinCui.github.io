@@ -72,13 +72,17 @@ tags:
 - **Problem**: The network is too complicate.
 - **Code Available**: [https://github.com/liaohaofu/adn](https://github.com/liaohaofu/adn)
 
-#### [Regularized Three-dimensional Generative Adversarial Nets for Unsupervised Metal Artifact Reduction]()
+#### [Regularized Three-dimensional Generative Adversarial Nets for Unsupervised Metal Artifact Reduction](https://arxiv.org/abs/1911.08105)
 - **Abstract**: 3D, unsupervised.
 - **Volume-to-volume translation**: Translate volumn-to-volumn due to the poor performance on large global artifacts. It may result from the inherent weakness of CNNs. May apply transformer or other self-attention block?
 
 #### [Adversarial Robust Training of Deep Learning MRI Reconstruction Models](https://arxiv.org/pdf/2011.00070.pdf)
 - **Abstract**: Adversarial attack. The adversarial perturbation is randomly searched. 
 - **Code Available**: [https://github.com/fcaliva/fastMRI_BB_abnormalities_annotation](https://github.com/fcaliva/fastMRI_BB_abnormalities_annotation)
+
+#### [Deep Sinogram Completion with Image Prior for Metal Artifact Reduction in CT Images](https://arxiv.org/abs/2009.07469) |
+- **Method**: ![](../img/post/MAR_1.png)
+- **Comment**: Rediculous!
   
 ---------------------
 ### Paper list
@@ -95,6 +99,7 @@ tags:
 | 2019 | Unsupervised | Image | [Regularized Three-dimensional Generative Adversarial Nets for Unsupervised Metal Artifact Reduction](https://arxiv.org/abs/1911.08105) |
 | 2020 | Unsupervised | Image  | [Unsupervised domain adaptation for practical metal artefact reduction in X-ray CT]() |
 | 2020 | Supervised | Image | [Adversarial Robust Training of Deep earning MRI Reconstruction Models](https://arxiv.org/pdf/2011.00070.pdf) |
+| 2020 | | Image & Sinogram | [Deep Sinogram Completion with Image Prior for Metal Artifact Reduction in CT Images](https://arxiv.org/abs/2009.07469) |
 
 ---------------------
 ### Server
