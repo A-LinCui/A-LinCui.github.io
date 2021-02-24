@@ -1,14 +1,14 @@
 ---
 layout:     post
 title:      Informal Essay
-subtitle:   Undergraduate Graduation Project
+subtitle:   Sad
 date:       2021-2-24
 author:     A-LinCui
 header-img: img/post/Winter.jpg
 catalog: true
 mathjax: true
 tags:
-    - DLiterature
+    - Literature
 ---
 
 #### 2021.2.24
