@@ -11,6 +11,9 @@ tags:
     - Deep Learning
 ---
 
+### Knowledge
+#### Architecture
+- Due to resource budget while training, the batch size is too small. Do not use batch normalzation!
 
 ### Challenges
 #### Different distribution of simulated dada and practical data
