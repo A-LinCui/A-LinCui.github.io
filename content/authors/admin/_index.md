@@ -114,6 +114,6 @@ social:
 highlight_name: true
 ---
 
-I am Zhao Junbo, a master's student majoring in Electronic Engineering from (Nanoscale Integrated Circuits and Systems Lab)[https://nicsefc.ee.tsinghua.edu.cn/], Department of Electronic Engineering, Tsinghua University. I have been engaged in the research of automatic machine learning (AutoML), especially Neural Architecture Search (NAS), since 2019. In addition, I also pay attention to the field of adversarial robustness. I prefer to challenge technology and push the limits of what I already do. And I am looking for a Ph.D. position at present.
+I am Zhao Junbo, a master's student majoring in Electronic Engineering from [Nanoscale Integrated Circuits and Systems Lab](https://nicsefc.ee.tsinghua.edu.cn/), Department of Electronic Engineering, Tsinghua University. I have been engaged in the research of automatic machine learning (AutoML), especially Neural Architecture Search (NAS), since 2019. In addition, I also pay attention to the field of adversarial robustness. I prefer to challenge technology and push the limits of what I already do. And I am looking for a Ph.D. position at present.
 
 {style="text-align: justify;"}
