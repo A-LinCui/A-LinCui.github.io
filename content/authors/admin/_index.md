@@ -97,6 +97,9 @@ social:
   - icon: github
     icon_pack: fab
     link: https://github.com/A-LinCui
+  - icon: zhihu
+    icon_pack: fab
+    link: 333
   # Link to a PDF of your resume/CV.
   # To use: copy your resume to `static/uploads/resume.pdf`, enable `ai` icons in `params.yaml`,
   # and uncomment the lines below.
