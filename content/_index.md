@@ -224,13 +224,15 @@ sections:
   #  design:
   #    columns: '2'
   #    view: compact
-  - block: collection
+  - block: contact
     id: contact
     content:
       title: Contact
       # Contact (add or remove contact options as necessary)
-      email: zhaojunbo2012@sina.cn
-      phone: 86-18343087267
+      - icon: email
+        text: zhaojunbo2012@sina.cn
+      - icon: phone
+        text: 86-18343087267
       # - icon: qq
       #  text: 599941932
       # wechat: bilanfengshan
