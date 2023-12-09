@@ -94,12 +94,12 @@ social:
   - icon: github
     icon_pack: fab
     link: https://github.com/A-LinCui
-  - icon: zhihu
-    icon_pack: fab
-    link: https://www.zhihu.com/people/A-LinCui
   - icon: qq
     icon_pack: fab
     link: '/#contact'
+  - icon: zhihu
+    icon_pack: fab
+    link: https://www.zhihu.com/people/A-LinCui
   - icon: envelope
     icon_pack: fas
     link: '/#contact'
