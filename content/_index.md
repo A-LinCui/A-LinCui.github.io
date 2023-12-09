@@ -231,6 +231,14 @@ sections:
       # Contact (add or remove contact options as necessary)
       email: zhaojunbo2012@sina.cn
       phone: 86-18343087267
+      contact_links:
+        - icon: qq
+          icon_pack: fab
+          name: 599941932
+        - icon: zhihu
+          icon_pack: fab
+          name: A-LinCui
+          link: https://www.zhihu.com/people/A-LinCui
       # Automatically link email and phone or display as text?
       autolink: true
     design:
