@@ -224,7 +224,7 @@ sections:
   #  design:
   #    columns: '2'
   #    view: compact
-  - block: contact
+  - block: collection
     id: contact
     content:
       title: Contact
