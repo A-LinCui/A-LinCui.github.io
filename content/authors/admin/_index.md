@@ -97,7 +97,7 @@ social:
   - icon: zhihu
     icon_pack: fab
     link: https://www.zhihu.com/people/A-LinCui
-  - filename: zhihu.jpeg
+  - icon: zhihu.jpeg
     #icon: qq
     icon_pack: fab
     link: '/#contact'
