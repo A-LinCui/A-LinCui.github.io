@@ -231,9 +231,11 @@ sections:
       # Contact (add or remove contact options as necessary)
       email: zhaojunbo2012@sina.cn
       phone: 86-18343087267
-      qq: 599941932
-      wechat: bilanfengshan
-      zhihu: A-LinCui
+      - icon: qq
+        text: 599941932
+      # wechat: bilanfengshan
+      - icon: zhihu
+        link: zhihu: A-LinCui
       # Automatically link email and phone or display as text?
       autolink: true
     design:
