@@ -229,17 +229,16 @@ sections:
     content:
       title: Contact
       # Contact (add or remove contact options as necessary)
-      - icon: email
-        text: zhaojunbo2012@sina.cn
-      - icon: phone
-        text: 86-18343087267
+      email: zhaojunbo2012@sina.cn
+      phone: 86-18343087267
+      zhihu: A-LinCui
       # - icon: qq
       #  text: 599941932
       # wechat: bilanfengshan
       # - icon: zhihu
       #  link: zhihu: A-LinCui
       # Automatically link email and phone or display as text?
-      autolink: false
+      autolink: true
     design:
       columns: '2'
 ---
