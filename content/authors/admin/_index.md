@@ -1,13 +1,13 @@
 ---
 # Display name
-title: 吳健雄
+title: 赵俊博
 
 # Name pronunciation (optional)
-name_pronunciation: Chien Shiung Wu
+name_pronunciation: Zhao Junbo
 
 # Full name (for SEO)
-first_name: Shiung Wu
-last_name: Chien
+first_name: Junbo
+last_name: Zhao
 
 # Status emoji
 status:
