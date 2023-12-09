@@ -234,13 +234,14 @@ sections:
       contact_links:
         - icon: github
           icon_pack: fab
+          name: https://github.com/A-LinCui
           link: https://github.com/A-LinCui
         - icon: qq
           icon_pack: fab
           name: 599941932
         - icon: zhihu
           icon_pack: fab
-          name: A-LinCui
+          name: https://www.zhihu.com/people/A-LinCui
           link: https://www.zhihu.com/people/A-LinCui
       # Automatically link email and phone or display as text?
       autolink: true
