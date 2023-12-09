@@ -232,6 +232,9 @@ sections:
       email: zhaojunbo2012@sina.cn
       phone: 86-18343087267
       contact_links:
+        - icon: github
+          icon_pack: fab
+          link: https://github.com/A-LinCui
         - icon: qq
           icon_pack: fab
           name: 599941932
