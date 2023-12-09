@@ -97,6 +97,9 @@ social:
   - icon: envelope
     icon_pack: fas
     link: '/#contact'
+  - icon: qq
+    icon_pack: fab
+    link: '/#contact'
   - icon: zhihu
     icon_pack: fab
     link: https://www.zhihu.com/people/A-LinCui
