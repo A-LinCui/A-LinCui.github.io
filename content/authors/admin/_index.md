@@ -25,7 +25,7 @@ organizations:
     url: https://www.tsinghua.edu.cn/
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: My research interests include neural architecture search and adversarial robustness.
 
 # Interests to show in About widget
 interests:
