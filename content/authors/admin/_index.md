@@ -94,9 +94,6 @@ social:
   - icon: github
     icon_pack: fab
     link: https://github.com/A-LinCui
-  - icon: qq
-    icon_pack: fab
-    link: '/#contact'
   - icon: envelope
     icon_pack: fas
     link: '/#contact'
