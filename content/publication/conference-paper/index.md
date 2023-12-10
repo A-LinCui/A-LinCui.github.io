@@ -6,7 +6,15 @@ title: 'Dynamic Ensemble of Low-Fidelity Experts: Mitigating NAS â€œCold-Startâ€
 # and it will be replaced with their full name and linked to their profile.
 authors:
   - admin
-  - Robert Ford
+  - Xuefei Ning
+  - Enshu Liu
+  - Binxin Ru
+  - Zixuan Zhou
+  - Tianchen Zhao
+  - Chen Chen
+  - Jiajin Zhang
+  - Qingmin Liao
+  - Yu Wang
 
 # Author notes (optional)
 author_notes:
@@ -33,7 +41,7 @@ abstract: Predictor-based Neural Architecture Search (NAS) employs an architectu
 # Summary. An optional shortened abstract.
 summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
 
-tags: []
+tags: [nas]
 
 # Display this page in the Featured widget?
 featured: true
@@ -43,14 +51,14 @@ featured: true
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: 'https://ojs.aaai.org/index.php/AAAI/article/view/26339/26111'
-url_code: 'https://github.com/HugoBlox/hugo-blox-builder'
+url_pdf: 'https://arxiv.org/pdf/2302.00932.pdf'
+url_code: 'https://github.com/walkerning/aw_nas'
 url_dataset: ''
-url_poster: ''
+url_poster: 'https://underline.io/events/380/sessions/14443/lecture/68309-dynamic-ensemble-of-low-fidelity-experts-mitigating-nas-cold-start?tab=Poster'
 url_project: ''
-url_slides: ''
+url_slides: 'https://app.underline.io/downloadable_materials/lectures/68309/slideshow'
 url_source: 'https://github.com/HugoBlox/hugo-blox-builder'
-url_video: 'https://youtube.com'
+url_video: 'https://underline.io/lecture/68309-dynamic-ensemble-of-low-fidelity-experts-mitigating-nas-cold-start'
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
@@ -64,15 +72,15 @@ image:
 #   Simply enter your project's folder or file name without extension.
 #   E.g. `internal-project` references `content/project/internal-project/index.md`.
 #   Otherwise, set `projects: []`.
-projects:
-  - example
+# projects:
+#  - example
 
 # Slides (optional).
 #   Associate this publication with Markdown slides.
 #   Simply enter your slide deck's filename without extension.
 #   E.g. `slides: "example"` references `content/slides/example/index.md`.
 #   Otherwise, set `slides: ""`.
-slides: example
+# slides: example
 ---
 
 {{% callout note %}}
