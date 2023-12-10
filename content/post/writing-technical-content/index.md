@@ -38,6 +38,8 @@ In this section, we start with the predictor-based neural architecture search to
 <img src="./figures/predictor-framework.png">
 <br>Figure 2: Typical architecture performance predictor framework. The architecture is first encoded by an architecture encoder and then fed into the MLP to output the final prediction score.</div>
 
+<br>
+
 For predictor-based neural architecture search, existing architecture encoding schemes mainly include sequence and graph-based schemes. Sequence-based schemes use specific serialization methods to convert architectural decisions into sequences (sequential architecture representation), which are then fed into a multilayer perceptron or recurrent neural network to obtain architectural representations. Graph-based architecture encoders apply graph convolutional networks to encode neural network architectures. Architecture predictors can generally give an approximate performance estimate of architecture in milliseconds and are, therefore, very efficient.
 
 **The process of encoding the architecture is itself the process of modeling the architecture. With limited data, the predictive power of architecture performance predictors is closely related to the applied architectural encoders.** Figure 3 compares four architecture encoders on four benchmarks. It can be observed that trained on the same training samples, the prediction ability of predictors using different architecture encoders is significantly different. For example, GNN-based TA-GATES achieves significantly better prediction precision than the most naive MLP (sequence encoding scheme).
@@ -45,6 +47,8 @@ For predictor-based neural architecture search, existing architecture encoding s
 <div align=center>
 <img src="./figures/TA-GATES-precision.png">
 <br>Figure 3：Precision@K comparison on the validation split of four benchmarks. X-axis：K; Y-axis: Precision. The training proportion is 5% on NB101 [Ying et al., ICML 2019], NB201 [Dong et al., ICLR 2020] , and NB301 [Siems et al., 2020], and 50% on NDS ENAS [Radosavovic et al., 2019].</div>
+
+<br>
 
 Why is the architecture modeling in predictor-based NAS such significant?
 
