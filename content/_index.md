@@ -39,17 +39,9 @@ sections:
   - block: about.biography
     id: about
     content:
-      title: Biography
+      title: About Me
       # Choose a user profile to display (a folder name within `content/authors/`)
       username: admin
-  # - block: skills
-  #  content:
-  #    title: Skills
-  #    text: ''
-  #    # Choose a user to display skills from (a folder name within `content/authors/`)
-  #    username: admin
-  #  design:
-  #    columns: '1'
   # - block: experience
   #  content:
   #    title: Experience
@@ -235,6 +227,9 @@ sections:
         - icon: qq
           icon_pack: fab
           name: 599941932
+        - icon: weixin
+          icon_pack: fab
+          name: bilanfengshan
         - icon: github
           icon_pack: fab
           name: https://github.com/A-LinCui
