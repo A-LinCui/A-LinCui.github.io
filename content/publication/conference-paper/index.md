@@ -8,8 +8,8 @@ authors:
   - admin
 
 # Author notes (optional)
-author_notes:
-  - 'Equal contribution'
+# author_notes:
+#  - 'Equal contribution'
 
 date: '2023-06-26T00:00:00Z'
 doi: 'https://doi.org/10.1609/aaai.v37i9.26339'
