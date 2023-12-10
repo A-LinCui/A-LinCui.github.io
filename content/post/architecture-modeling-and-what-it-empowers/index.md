@@ -74,12 +74,12 @@ Figure 4 illustrates the gerneral working flow and various applications of archi
 - Architecture transformation that tells us how to transform an architecture for better performance under a certain application scenario.
 - Architecture understanding that conducts model-based explanation of the relationship between architecture pattern and performance.
 
-For the first application, we conduct a series of studies (GATES, TA-GATES, GATES++, DELE, Gibbon) to design advanced architecture encoders or training strategies. For the second application, we propose a novel CLOSENet that decouples the parameters from operations to improve one-shot estimation quality in CLOSE. And for the third application, we transform the architectures of given networks to improve the AI security under various attacks in DeepGuiser. For the last application, some studies (e.g, NAS-Bowl [Ru et al., ICLR 2021]) gain understanding of the relationship between architecture and performance in a search space.
+For the first application, a series of studies (GATES, TA-GATES, GATES++, DELE, Gibbon) are conducted to design advanced architecture encoders or training strategies. For the second application, a novel CLOSENet that decouples the parameters from operations is proposed to improve one-shot estimation quality in CLOSE. And for the third application, the architectures of given networks are transformed to improve the AI security under various attacks in DeepGuiser. For the last application, some studies (e.g, NAS-Bowl [Ru et al., ICLR 2021]) gain understanding of the relationship between architecture and performance in a search space.
 
 In the following sections, we will further introduce the application of architecture modeling to these tasks.
 
 ### Architecture Modeling Application：Architecture Search
-As discussed above, architecture modeling plays a crucial role in neural architecture search. Our work centers around a core idea: Through learnable modeling of the search space (i.e., a performance predictor of architectures), we can know which search space regions are worth exploring, and thus accelerate the exploration process. This section will take our researches as the main thread and share our views on the application of architecture modeling to architecture search tasks. Specifically, we'll introduce:
+As discussed above, architecture modeling plays a crucial role in neural architecture search. A series of studies center around a core idea: Through learnable modeling of the search space (i.e., a performance predictor of architectures), we can know which search space regions are worth exploring, and thus accelerate the exploration process. This section will take several researches as the main thread and share our views on the application of architecture modeling to architecture search tasks. Specifically, we'll introduce:
 
 - The role of architecture modeling in predictor-based NAS.
 - The significance of architecture modeling for improving one-shot evaluation.
@@ -88,19 +88,19 @@ As discussed above, architecture modeling plays a crucial role in neural archite
 #### Architecture Modeling in Predictor-based Neural Architecture Search
 Predictor-based NAS trains an approximate performance predictor and utilizes it to rank unseen architectures without actually training them. Therefore, once we have a predictor that can reliably rank the performance of unseen architectures, the architecture exploration can be significantly accelerated. However, predictor-based NAS suffers from the severe “cold-start” problem: It usually takes quite a considerable cost to acquire the architecture-performance data needed for training a working predictor from scratch.
 
-To alleviate the need for training data for predictor-based neural architecture search, we sequentially conduct three studies： GATES, TA-GATES, and DELE. As shown in Figure 5, while the former two studies focus on designing more reasonable architecture encoders, the latter focuses on designing a more data-efficient training manner for better architecture modeling. We will briefly introduce them below.
+To alleviate the need for training data for predictor-based neural architecture search, three studies are conducted sequentially： GATES, TA-GATES, and DELE. As shown in Figure 5, while the former two studies focus on designing more reasonable architecture encoders, the latter focuses on designing a more data-efficient training manner for better architecture modeling. We will briefly introduce them below.
 
 <div align=center>
 <img src="./figures/improve_search.jpg">
-Figure 5：Our researches  (Left: GATES; Middle: TA-GATES; Right: DELE) on architecture modeling in predictor-based neural architecture search.</div>
+Figure 5：Researches  (Left: GATES; Middle: TA-GATES; Right: DELE) on architecture modeling in predictor-based neural architecture search.</div>
 
 <br>
 
 **A Generic Graph-based Neural Architecture Encoding Scheme for Predictor-based NAS (GATES)**
 
-Recognizing the high cost of getting actual architecture performance data as the major challenge for predictor-based NAS, to exploit information in the limited data more efficiently, we first propose GATES to learn the predictor in a more data-efficient way.
+Recognizing the high cost of getting actual architecture performance data as the major challenge for predictor-based NAS, to exploit information in the limited data more efficiently, we first GATES is proposed to learn the predictor in a more data-efficient way.
 
-As described above, traditional architecture encoders treat architecture as a sequence or a simple DAG. However, they ignore that architecture should describe how the data flow and get processed. Following this intuition, the core of our proposed method is to mimic the data flow and processing process to encode the architecture. Specifically, in the encoding process of GATES, a piece of "virtual information" is taken as the input node embedding, and each operation is a transformation of the propagated information. Figure 6 shows an example of the encoding flow; more details can be found in our paper. The proposed GATES is a more suitable encoding method for data-processing directed acyclic graphs (DAGs) which matches the nature of this type of data. Indeed, it can intrinsically encode equivalent/isomorphic architectures to the same embedding.
+As described above, traditional architecture encoders treat architecture as a sequence or a simple DAG. However, they ignore that architecture should describe how the data flow and get processed. Following this intuition, the core of the proposed method is to mimic the data flow and processing process to encode the architecture. Specifically, in the encoding process of GATES, a piece of "virtual information" is taken as the input node embedding, and each operation is a transformation of the propagated information. Figure 6 shows an example of the encoding flow; more details can be found in our paper. The proposed GATES is a more suitable encoding method for data-processing directed acyclic graphs (DAGs) which matches the nature of this type of data. Indeed, it can intrinsically encode equivalent/isomorphic architectures to the same embedding.
 
 <div align=center>
 <img src="./figures/GATES-flow.png">
@@ -110,9 +110,9 @@ Figure 6：Illustration of the GATES encoding flow.</div>
 
 **TA-GATES: An Encoding Scheme for Neural Network Architectures**
 
-Even if two operations are of the same type, they have different functionalities according to their architectural context. However, plain GATES does not give contextualized embeddings for different operations of the same type. To solve this problem, we propose TA-GATES, a follow-up improvement to GATES, that can get contextualized embeddings for different operations (even those of the same type).
+Even if two operations are of the same type, they have different functionalities according to their architectural context. However, plain GATES does not give contextualized embeddings for different operations of the same type. To solve this problem, TA-GATES, a follow-up improvement to GATES, gets contextualized embeddings for different operations (even those of the same type).
 
-To get a more discriminative encoding, the intuition behind the principled design of TA-GATES is "an architecture not only describes how the data flow and get processed in the forward propagation, but it also decides the learning dynamics of the model." Accordingly, we propose to improve GATES from two aspects:
+To get a more discriminative encoding, the intuition behind the principled design of TA-GATES is "an architecture not only describes how the data flow and get processed in the forward propagation, but it also decides the learning dynamics of the model." Accordingly, it improves GATES from two aspects:
 
 - Analogy to Iterative Parameter Training: Mimicking the architecture training process to encode it by conducting several forward and backward passes on the architecture DAG and updating the operation embedding in each backward pass (as illustrated in Figure 5 (Middle)).
 
@@ -130,11 +130,11 @@ Table 1：Accuracy of the discovered architectures on NB101, NB201, and NB301 wi
 
 Table 1 shows the accuracies of the discovered architectures on NAS-Bench-101 / 201 / 301 with different architectures. Compared with MLP, LSTM, and GCN, GATES discovered better architectures across different search spaces. Further, TA-GATES achieves better results than GATES. For example, on NAS-Bench-201, the average accuracy of discovered architectures by TA-GATES (0.9393) is 0.44% better than that by GATES (0.9349). These results demonstrate the effectiveness of GATES and TA-GATES.
 
-**Dynamic Ensemble of Low-fidelity Experts: Mitigating NAS “Cold-Start” (DELE)**
+[**Dynamic Ensemble of Low-fidelity Experts: Mitigating NAS “Cold-Start” (DELE)**](https://a-lincui.github.io/publication/dele/)
 
 Based on the intuition that "low-fidelity information can be beneficial for learning the modeling," DELE focuses on exploiting more information in other cheaper-to-obtain performance estimations (i.e., low-fidelity information) to mitigate the data requirements of predictor training. However, the types of low-fidelity information helpful for performance prediction are unclear to practitioners beforehand. In addition, different types of low-fidelity information could provide beneficial information from different aspects, but the naive method described above can only utilize one type of low-fidelity information.
 
-To solve the problem, we propose a dynamic mixture-of-expert predictor framework to fuse beneficial knowledge from different low-fidelity experts. Specifically, as shown in Figure 5 (Right), each low-fidelity expert is trained with one type of low-fidelity information (e.g., zero-shot evaluation scores, complexity scores, and so on). Then a dynamic ensemble of these experts is trained using only a small set of ground-truth performance data.
+To solve the problem, a dynamic mixture-of-expert predictor framework (DELE) is proposed to fuse beneficial knowledge from different low-fidelity experts. Specifically, as shown in Figure 5 (Right), each low-fidelity expert is trained with one type of low-fidelity information (e.g., zero-shot evaluation scores, complexity scores, and so on). Then a dynamic ensemble of these experts is trained using only a small set of ground-truth performance data.
 
 Compared to previous studies that improve architecture modeling by designing specialized predictor architectures or training losses, DELE can be combined with these studies to boost performance further. For example, as shown in Table 2, with 1% training samples on NAS-Bench-201, DELE increases Kendall's Tau correlation between predicted scores (GATES) and actual performance from 0.7332 to 0.8244. The increasing ranking correlation will further lead to better-discovered architectures.
 
