@@ -61,8 +61,8 @@ social:
     icon_pack: fab
     link: '/#contact'
   - icon: weixin
-  - icon_pack: fab
-  - link: '/#contact'
+    icon_pack: fab
+    link: '/#contact'
   - icon: zhihu
     icon_pack: fab
     link: https://www.zhihu.com/people/A-LinCui
