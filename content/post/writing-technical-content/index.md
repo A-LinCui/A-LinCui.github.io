@@ -134,6 +134,12 @@ To solve the problem, we propose a dynamic mixture-of-expert predictor framework
 
 Compared to previous studies that improve architecture modeling by designing specialized predictor architectures or training losses, DELE can be combined with these studies to boost performance further. For example, as shown in Table 2, with 1% training samples on NAS-Bench-201, DELE increases Kendall's Tau correlation between predicted scores (GATES) and actual performance from 0.7332 to 0.8244. The increasing ranking correlation will further lead to better-discovered architectures.
 
+<div align=center>
+<img src="./figures/LFNAS-KD.png">
+Table 2：The Kendall’s Tau (average over five runs) of using different encoders on NAS-Bench-201. And the standard deviation is in the subscript. “Vannila” represents directly training predictor with ground-truth accuracies without low-fidelity information utilization.</div>
+
+<br>
+
 #### Architecture Modeling for Improving One-shot Estimation
 Besides predictor-based NAS, architecture modeling is also significant to one-shot evaluation.
 
@@ -145,7 +151,19 @@ To solve the problem brought by the traditional sharing mechanism, CLOSE achieve
 
 The key idea behind CLOSENet is to decouple the parameters from operations to enable flexible sharing scheme and adjustable sharing extent. Specifically, as shown in Figure 8, CLOSE designs a novel CLOSENet, whose sharing extent can be easily adjusted to enable the adaption of the sharing extent during the training process. And CLOSE borrows the idea of curriculum learning to design a novel supernet training strategy, which not only accelerates the supernet training but also improves the saturating ranking quality of the supernet.
 
+<div align=center>
+<img src="./figures/CLOSE.png">
+Figure 8：CLOSENet contains GLOW blocks to store the parameters of candidate operations, and the GATE module to assign GLOW blocks to operations.</div>
+
+<br>
+
 Figure 9 compares CLOSENet with vanilla supernets on four NAS benchmarks. CLOSENet achieves a higher KD and P@top5% on all the NAS benchmarks. Moreover, throughout the training process, CLOSENet consistently achieves higher ranking quality, which implies CLOSENet’s superiority to the vanilla supernet under any budget for supernet training.
+
+<div align=center>
+<img src="./figures/CLOSE-KD.png">
+Figure 9：Comparison of different criteria with the vanilla one-shot supernet on four NAS benchmarks. X-axis: Training epochs. Y-axis: Evaluation criteria.</div>
+
+<br>
 
 #### Architecture Modeling in Architecture-Hardware Joint Search
 Architecture modeling is not only for neural network architectures but also for hardware architectures.
@@ -157,6 +175,12 @@ Neural Architecture Search (NAS) can be applied to explore the NN model and hard
 **Gibbon: Efficient Co-Exploration of NN Model and Processing-In-Memory Architecture**
 
 Gibbon proposes an evolutionary search algorithm with adaptive parameter priority to co-design the neural network architectures and the memristor-based Processing-In-Memory (PIM) architectures. Specifically, as shown in Figure 10, Gibbon models the neural network architecture and the PIM architecture jointly, and uses the difference form to model the impact of hardware irrational factors on the performance of the algorithm. The core of evaluation acceleration is an RNN-based NN accuracy and PIM performance predictor, which substitutes for a large part of the PIM simulator workload and reduces the long simulation time.
+
+<div align=center>
+<img src="./figures/GIBBON.png">
+Illustration of the Gibbon framework.</div>
+
+<br>
 
 ### Architecture Modeling Application：Architecture Transformation
 Another application is the use of architectural modeling to disguise the transformation of the architecture.
