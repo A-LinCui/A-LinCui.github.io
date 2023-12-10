@@ -90,6 +90,10 @@ Recognizing the high cost of getting actual architecture performance data as the
 
 As described above, traditional architecture encoders treat architecture as a sequence or a simple DAG. However, they ignore that architecture should describe how the data flow and get processed. Following this intuition, the core of our proposed method is to mimic the data flow and processing process to encode the architecture. Specifically, in the encoding process of GATES, a piece of "virtual information" is taken as the input node embedding, and each operation is a transformation of the propagated information. Figure 6 shows an example of the encoding flow; more details can be found in our paper. The proposed GATES is a more suitable encoding method for data-processing directed acyclic graphs (DAGs) which matches the nature of this type of data. Indeed, it can intrinsically encode equivalent/isomorphic architectures to the same embedding.
 
+<div align=center>
+<img src="./figures/GATES-flow.png">
+<br>Figure 6：Illustration of the GATES encoding flow.</div>
+
 **TA-GATES: An Encoding Scheme for Neural Network Architectures**
 
 Even if two operations are of the same type, they have different functionalities according to their architectural context. However, plain GATES does not give contextualized embeddings for different operations of the same type. To solve this problem, we propose TA-GATES, a follow-up improvement to GATES, that can get contextualized embeddings for different operations (even those of the same type).
@@ -99,6 +103,16 @@ To get a more discriminative encoding, the intuition behind the principled desig
 - Analogy to Iterative Parameter Training: Mimicking the architecture training process to encode it by conducting several forward and backward passes on the architecture DAG and updating the operation embedding in each backward pass (as illustrated in Figure 5 (Middle)).
 
 - Analogy to Random Parameter Initialization: Applying symmetry breaking to the initial operation embeddings to enable TA-GATES to distinguish between symmetric operations (as illustrated in Figure 7).
+
+<div align=center>
+<img src="./figures/symmetry_breaking.png">
+<br>Figure 7：A single forward pass in the encoding process without  / with  the symmetry-breaking.</div>
+
+<div align=center>
+<img src="./figures/TA-GATES-search.png">
+<br>Table 1：Accuracy of the discovered architectures on NB101, NB201, and NB301 with different encoders. On all benchmarks, the predictors are trained with a training proportion of 1%.</div>
+
+Table 1 shows the accuracies of the discovered architectures on NAS-Bench-101 / 201 / 301 with different architectures. Compared with MLP, LSTM, and GCN, GATES discovered better architectures across different search spaces. Further, TA-GATES achieves better results than GATES. For example, on NAS-Bench-201, the average accuracy of discovered architectures by TA-GATES (0.9393) is 0.44% better than that by GATES (0.9349). These results demonstrate the effectiveness of GATES and TA-GATES.
 
 **Dynamic Ensemble of Low-fidelity Experts: Mitigating NAS “Cold-Start” (DELE)**
 
