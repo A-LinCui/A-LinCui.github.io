@@ -208,16 +208,16 @@ This post builds on our research and shares our understanding of architecture mo
 Finally, we sincerely hope to further share mutual thoughts with interested readers. Welcome to contact us!
 
 ## References
-[Liu et al., ICLR 2019] Liu, Hanxiao, Karen Simonyan, and Yiming Yang. "DARTS: Differentiable Architecture Search." International Conference on Learning Representations. 2019.
+[Liu et al., ICLR 2019] Liu, Hanxiao, Karen Simonyan, and Yiming Yang. [DARTS: Differentiable Architecture Search.](https://arxiv.org/abs/1806.09055) International Conference on Learning Representations. 2019.
 
-[Pham et al., ICML 2018] Pham, Hieu, et al. "Efficient neural architecture search via parameters sharing." International conference on machine learning. PMLR, 2018.
+[Pham et al., ICML 2018] Pham, Hieu, et al. [Efficient neural architecture search via parameters sharing.](https://arxiv.org/abs/1802.03268) International conference on machine learning. PMLR, 2018.
 
-[Ying et al., ICML 2019] Chris Ying, Aaron Klein, Eric Christiansen, Esteban Real, Kevin Murphy, and Frank Hutter. Nas-bench-101: Towards reproducible neural architecture search. ICML 2019.
+[Ying et al., ICML 2019] Chris Ying, Aaron Klein, Eric Christiansen, Esteban Real, Kevin Murphy, and Frank Hutter. [Nas-bench-101: Towards reproducible neural architecture search.](https://arxiv.org/abs/1902.09635) ICML 2019.
 
-[Dong et al., ICLR 2020] Xuanyi Dong and Yi Yang. Nas-bench-201: Extending the scope of reproducible neural architecture search. ICLR 2020.
+[Dong et al., ICLR 2020] Xuanyi Dong and Yi Yang. [Nas-bench-201: Extending the scope of reproducible neural architecture search.](https://arxiv.org/abs/2001.00326) ICLR 2020.
 
-[Siems et al., 2020] Julien Siems, Lucas Zimmer, Arber Zela, Jovita Lukasik, Margret Keuper, and Frank Hutter. Nas-bench-301 and the case for surrogate benchmarks for neural architecture search. 2020.
+[Siems et al., 2020] Julien Siems, Lucas Zimmer, Arber Zela, Jovita Lukasik, Margret Keuper, and Frank Hutter. [Nas-bench-301 and the case for surrogate benchmarks for neural architecture search.](https://arxiv.org/abs/2008.09777) 2020.
 
-[Radosavovic et al., 2019] Radosavovic, I.; Johnson, J.; Xie, S.; Lo, W.-Y.; and Dollar, P. On network design spaces for visual recognition. ICCV 2019.
+[Radosavovic et al., 2019] Radosavovic, I.; Johnson, J.; Xie, S.; Lo, W.-Y.; and Dollar, P. [On network design spaces for visual recognition.](https://arxiv.org/abs/1905.13214) ICCV 2019.
 
-[Ru et al., ICLR 2021] Ru B, Wan X, Dong X, et al. "Interpretable neural architecture search via bayesian optimisation with weisfeiler-lehman kernels." International Conference on Learning Representations. 2021.
+[Ru et al., ICLR 2021] Ru B, Wan X, Dong X, et al. [Interpretable neural architecture search via bayesian optimisation with weisfeiler-lehman kernels.](https://arxiv.org/abs/2006.07556) International Conference on Learning Representations. 2021.
