@@ -42,7 +42,8 @@ abstract: Predictor-based Neural Architecture Search (NAS) employs an architectu
 summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
 
 tags:
-- AutoML NAS
+- AutoML
+- NAS
 
 # Display this page in the Featured widget?
 featured: true
