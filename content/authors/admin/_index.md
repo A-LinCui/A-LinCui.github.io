@@ -1,9 +1,9 @@
 ---
 # Display name
-title: 赵俊博
+title: Junbo Zhao
 
 # Name pronunciation (optional)
-name_pronunciation: Zhao Junbo
+# name_pronunciation: Zhao Junbo
 
 # Full name (for SEO)
 first_name: Junbo
