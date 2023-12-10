@@ -81,3 +81,6 @@ image:
 #   Otherwise, set `slides: ""`.
 # slides: example
 ---
+
+<div style="text-align: justify;">
+</div>
