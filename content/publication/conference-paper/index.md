@@ -6,15 +6,6 @@ title: 'Dynamic Ensemble of Low-Fidelity Experts: Mitigating NAS â€œCold-Startâ€
 # and it will be replaced with their full name and linked to their profile.
 authors:
   - admin
-  - Xuefei Ning
-  - Enshu Liu
-  - Binxin Ru
-  - Zixuan Zhou
-  - Tianchen Zhao
-  - Chen Chen
-  - Jiajin Zhang
-  - Qingmin Liao
-  - Yu Wang
 
 # Author notes (optional)
 author_notes:
