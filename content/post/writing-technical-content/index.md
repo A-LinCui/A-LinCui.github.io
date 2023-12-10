@@ -44,6 +44,29 @@ Why is the architecture modeling in predictor-based NAS such significant?
 
 Take the sequence-based schemes as an example. As mentioned above, although sequence-based can accurately represent a specific architecture, it can hardly reflect the inherent properties of the architecture. For example, they are challenging to reflect topological information, and numerical distances between encodings cannot reflect fundamental performance differences. Such problems make it difficult to mine enough adequate information from limited data and not rank the performance of different architectures well, thus affecting the search results.
 
+Figure 4 illustrates the gerneral working flow and various applications of architecture modeling：
+
+- Architecture search acceleration by sampling architectures that are more worth exploring (as discussed above).
+- More accurate architecture performance estimation that benefits architecture search.
+- Architecture transformation that tells us how to transform an architecture for better performance under a certain application scenario.
+- Architecture understanding that conducts model-based explanation of the relationship between architecture pattern and performance.
+
+For the first application, we conduct a series of studies (GATES, TA-GATES, GATES++, DELE, Gibbon) to design advanced architecture encoders or training strategies. For the second application, we propose a novel CLOSENet that decouples the parameters from operations to improve one-shot estimation quality in CLOSE. And for the third application, we transform the architectures of given networks to improve the AI security under various attacks in DeepGuiser. For the last application, some studies (e.g, NAS-Bowl [Ru et al., ICLR 2021]) gain understanding of the relationship between architecture and performance in a search space.
+
+In the following sections, we will further introduce the application of architecture modeling to these tasks.
+
+### Architecture Modeling Application：Architecture Search
+As discussed above, architecture modeling plays a crucial role in neural architecture search. Our work centers around a core idea: Through learnable modeling of the search space (i.e., a performance predictor of architectures), we can know which search space regions are worth exploring, and thus accelerate the exploration process. This section will take our researches as the main thread and share our views on the application of architecture modeling to architecture search tasks. Specifically, we'll introduce:
+
+- The role of architecture modeling in predictor-based NAS.
+- The significance of architecture modeling for improving one-shot evaluation.
+- The role of architecture modeling in architecture-hardware joint search.
+
+#### Architecture Modeling in Predictor-based Neural Architecture Search
+Predictor-based NAS trains an approximate performance predictor and utilizes it to rank unseen architectures without actually training them. Therefore, once we have a predictor that can reliably rank the performance of unseen architectures, the architecture exploration can be significantly accelerated. However, predictor-based NAS suffers from the severe “cold-start” problem: It usually takes quite a considerable cost to acquire the architecture-performance data needed for training a working predictor from scratch.
+
+To alleviate the need for training data for predictor-based neural architecture search, we sequentially conduct three studies： GATES, TA-GATES, and DELE. As shown in Figure 5, while the former two studies focus on designing more reasonable architecture encoders, the latter focuses on designing a more data-efficient training manner for better architecture modeling. We will briefly introduce them below.
+
 <div align=center>
 <img src="./figures/arch_modeling.png">
 <br>Figure 4：Architecture modeling can enable a variety of applications.</div>
