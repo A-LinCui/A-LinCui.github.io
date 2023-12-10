@@ -96,7 +96,7 @@ Figure 5：Researches  (Left: GATES; Middle: TA-GATES; Right: DELE) on architect
 
 <br>
 
-**A Generic Graph-based Neural Architecture Encoding Scheme for Predictor-based NAS (GATES)**
+[**A Generic Graph-based Neural Architecture Encoding Scheme for Predictor-based NAS (GATES)**](https://arxiv.org/abs/2004.01899)
 
 Recognizing the high cost of getting actual architecture performance data as the major challenge for predictor-based NAS, to exploit information in the limited data more efficiently, we first GATES is proposed to learn the predictor in a more data-efficient way.
 
@@ -108,7 +108,7 @@ Figure 6：Illustration of the GATES encoding flow.</div>
 
 <br>
 
-**TA-GATES: An Encoding Scheme for Neural Network Architectures**
+[**TA-GATES: An Encoding Scheme for Neural Network Architectures**](https://a-lincui.github.io/publication/tagates/)
 
 Even if two operations are of the same type, they have different functionalities according to their architectural context. However, plain GATES does not give contextualized embeddings for different operations of the same type. To solve this problem, TA-GATES, a follow-up improvement to GATES, gets contextualized embeddings for different operations (even those of the same type).
 
@@ -149,7 +149,7 @@ Besides predictor-based NAS, architecture modeling is also significant to one-sh
 
 One-shot NAS shares operation parameters among candidate architectures in a “supernet” and trains this supernet to evaluate all sampled candidate architectures. However, one-shot NAS suffers from the poor ranking correlation between one-shot estimations and stand-alone estimations. And the excessive sharing of parameters, i.e., the large sharing extent, has been widely regarded as the most critical factor causing unsatisfying performance estimation.
 
-**CLOSE: Curriculum Learning On the Sharing Extent Towards Better One-shot NAS**
+[**CLOSE: Curriculum Learning On the Sharing Extent Towards Better One-shot NAS**](https://arxiv.org/abs/2207.07868)
 
 To solve the problem brought by the traditional sharing mechanism, CLOSE achieves a win-win scenario of supernet training efficiency and high-ranking quality by adapting the sharing extent during the supernet training process.
 
@@ -176,7 +176,7 @@ As we know, neural network architecture and hardware architecture are two import
 
 Neural Architecture Search (NAS) can be applied to explore the NN model and hardware architecture co-design space automatically. However, the vanilla NAS methods suffer from low exploration efficiency and long search time because of the explosive search space expansion and the time-consuming simulation of hardware architectures. To solve these problems, we need an efficient co-exploration framework for the NN model and hardware architecture by leveraging the power of architecture modeling.
 
-**Gibbon: Efficient Co-Exploration of NN Model and Processing-In-Memory Architecture**
+[**Gibbon: Efficient Co-Exploration of NN Model and Processing-In-Memory Architecture**](https://ieeexplore.ieee.org/document/9774605)
 
 Gibbon proposes an evolutionary search algorithm with adaptive parameter priority to co-design the neural network architectures and the memristor-based Processing-In-Memory (PIM) architectures. Specifically, as shown in Figure 10, Gibbon models the neural network architecture and the PIM architecture jointly, and uses the difference form to model the impact of hardware irrational factors on the performance of the algorithm. The core of evaluation acceleration is an RNN-based NN accuracy and PIM performance predictor, which substitutes for a large part of the PIM simulator workload and reduces the long simulation time.
 
@@ -191,7 +191,7 @@ Another application is the use of architectural modeling to disguise the transfo
 
 In AI security, existing architecture stealing methods can steal network architecture through various side-channel information. Architecture stealing attacks such as these bring significant security risks. Attackers can steal the target model architecture and use it to migrate and confront attacks. This makes it easy to generate adversarial examples that mislead the target model.
 
-DeepGuiser proposes an architecture camouflage transformer to transform the architecture of a trained model while ensuring that the weights can be equivalently transformed to the new architecture without training. For example, changing conv3x3 into conv5x5 by padding zero on the outside of the convolution kernel, changing skip-connection into convolution by filling in appropriate weights. To realize this ideal usage scenario, DeepGuiser predicts whether each operation transformation can improve the defense against steal-migration attacks based on the modeling of the architecture operation level and directly gives the architecture transformation decision.
+[DeepGuiser](https://openreview.net/forum?id=PArJcOptzg) proposes an architecture camouflage transformer to transform the architecture of a trained model while ensuring that the weights can be equivalently transformed to the new architecture without training. For example, changing conv3x3 into conv5x5 by padding zero on the outside of the convolution kernel, changing skip-connection into convolution by filling in appropriate weights. To realize this ideal usage scenario, DeepGuiser predicts whether each operation transformation can improve the defense against steal-migration attacks based on the modeling of the architecture operation level and directly gives the architecture transformation decision.
 
 #### Architecture Modeling Application：Architecture Understanding
 The third application of architecture modeling is architecture understanding. It is well known that different architectures have different performances. Some architectures can outperform humans, while others are entirely incompetent for the target task. Architecture search can help us find excellent architectures. However, the reason why the performance of architecture is good or bad still needs to be understood by researchers with the help of architecture modeling.
