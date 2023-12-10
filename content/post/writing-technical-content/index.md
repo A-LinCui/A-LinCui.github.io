@@ -2,9 +2,9 @@
 title: 	Architecture Modeling and What It Empowers
 date: 2023-12-10
 math: true
-image:
-  placement: 2
-  caption: 'Image credit: [**John Moeses Bauan**](https://unsplash.com/photos/OGZtQF8iC0g)'
+# image:
+#  placement: 2
+#  caption: 'Image credit: [**John Moeses Bauan**](https://unsplash.com/photos/OGZtQF8iC0g)'
 ---
 
 
@@ -16,3 +16,7 @@ However, the search space is always so huge that efficient evaluation methods ar
 Before formally discussing architecture modeling, we first briefly describe the architecture representation in neural architecture search. The so-called architecture representation is a structure that can represent a certain architecture in the search space. This is helpful for understanding the methodology of architectural modeling and its implications.
 
 ### Squential Architecture Representation
+
+<div align=center>
+<img src="https://img-blog.csdnimg.cn/98ceaf6910c441d6b18ac3565cbb82b8.png">
+<br>摩托车图片</div>
