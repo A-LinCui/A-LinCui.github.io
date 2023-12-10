@@ -221,7 +221,3 @@ Finally, we sincerely hope to further share mutual thoughts with interested read
 [Radosavovic et al., 2019] Radosavovic, I.; Johnson, J.; Xie, S.; Lo, W.-Y.; and Dollar, P. On network design spaces for visual recognition. ICCV 2019.
 
 [Ru et al., ICLR 2021] Ru B, Wan X, Dong X, et al. "Interpretable neural architecture search via bayesian optimisation with weisfeiler-lehman kernels." International Conference on Learning Representations. 2021.
-
-<div align=center>
-<img src="./figures/arch_modeling.png">
-<br>Figure 4：Architecture modeling can enable a variety of applications.</div>
