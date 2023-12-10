@@ -42,12 +42,20 @@ For predictor-based neural architecture search, existing architecture encoding s
 
 **The process of encoding the architecture is itself the process of modeling the architecture. With limited data, the predictive power of architecture performance predictors is closely related to the applied architectural encoders.** Figure 3 compares four architecture encoders on four benchmarks. It can be observed that trained on the same training samples, the prediction ability of predictors using different architecture encoders is significantly different. For example, GNN-based TA-GATES achieves significantly better prediction precision than the most naive MLP (sequence encoding scheme).
 
+<div align=center>
+<img src="./figures/TA-GATES-precision.png">
+<br>Figure 3：Precision@K comparison on the validation split of four benchmarks. X-axis：K; Y-axis: Precision. The training proportion is 5% on NB101 [Ying et al., ICML 2019], NB201 [Dong et al., ICLR 2020] , and NB301 [Siems et al., 2020], and 50% on NDS ENAS [Radosavovic et al., 2019] .</div>
+
 Why is the architecture modeling in predictor-based NAS such significant?
 
 - On the one hand, an exemplary architecture modeling scheme can extract and integrate valid information from the architectural representation.
 - On the other hand, prior knowledge can be introduced to reduce the data requirement further.
 
 Take the sequence-based schemes as an example. As mentioned above, although sequence-based can accurately represent a specific architecture, it can hardly reflect the inherent properties of the architecture. For example, they are challenging to reflect topological information, and numerical distances between encodings cannot reflect fundamental performance differences. Such problems make it difficult to mine enough adequate information from limited data and not rank the performance of different architectures well, thus affecting the search results.
+
+<div align=center>
+<img src="./figures/arch_modeling.png">
+<br>Figure 4：Architecture modeling can enable a variety of applications.</div>
 
 Figure 4 illustrates the gerneral working flow and various applications of architecture modeling：
 
@@ -71,6 +79,10 @@ As discussed above, architecture modeling plays a crucial role in neural archite
 Predictor-based NAS trains an approximate performance predictor and utilizes it to rank unseen architectures without actually training them. Therefore, once we have a predictor that can reliably rank the performance of unseen architectures, the architecture exploration can be significantly accelerated. However, predictor-based NAS suffers from the severe “cold-start” problem: It usually takes quite a considerable cost to acquire the architecture-performance data needed for training a working predictor from scratch.
 
 To alleviate the need for training data for predictor-based neural architecture search, we sequentially conduct three studies： GATES, TA-GATES, and DELE. As shown in Figure 5, while the former two studies focus on designing more reasonable architecture encoders, the latter focuses on designing a more data-efficient training manner for better architecture modeling. We will briefly introduce them below.
+
+<div align=center>
+<img src="./figures/improve_search.jpg">
+<br>Figure 5：Our researches  (Left: GATES; Middle: TA-GATES; Right: DELE) on architecture modeling in predictor-based neural architecture search.</div>
 
 **A Generic Graph-based Neural Architecture Encoding Scheme for Predictor-based NAS (GATES)**
 
