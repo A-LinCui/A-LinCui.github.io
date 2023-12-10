@@ -1,4 +1,4 @@
-z---
+---
 title: 	Architecture Modeling and What It Empowers
 date: 2023-12-10
 math: true
