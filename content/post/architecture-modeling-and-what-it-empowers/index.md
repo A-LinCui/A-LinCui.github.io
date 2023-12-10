@@ -2,6 +2,10 @@
 title: 	Architecture Modeling and What It Empowers
 date: 2023-12-10
 math: true
+
+image:
+  placement: 2
+  caption: 'Image credit: [https://www.automl.org/nas-overview/](https://www.automl.org/nas-overview/)'
 ---
 
 
