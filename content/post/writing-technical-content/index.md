@@ -18,5 +18,5 @@ Before formally discussing architecture modeling, we first briefly describe the 
 ### Squential Architecture Representation
 
 <div align=center>
-<img src="https://img-blog.csdnimg.cn/98ceaf6910c441d6b18ac3565cbb82b8.png">
+<img src="./featured.png">
 <br>摩托车图片</div>
