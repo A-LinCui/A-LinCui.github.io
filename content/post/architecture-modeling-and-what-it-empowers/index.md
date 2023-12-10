@@ -8,7 +8,7 @@ image:
   caption: 'Image credit: [https://www.automl.org/nas-overview/](https://www.automl.org/nas-overview/)'
 ---
 
-<p align="justify">
+<div style="text-align: justify;">
 
 With the wide application of deep learning technology, the updated speed of neural architecture and demand for computing power is increasing daily. As a result, there is an urgent need for multi-level optimization for task performance and hardware overhead, from neural network architecture to hardware architecture.
 
@@ -227,4 +227,4 @@ Finally, we sincerely hope to further share mutual thoughts with interested read
 
 [Ru et al., ICLR 2021] Ru B, Wan X, Dong X, et al. [Interpretable neural architecture search via bayesian optimisation with weisfeiler-lehman kernels.](https://arxiv.org/abs/2006.07556) International Conference on Learning Representations. 2021.
 
-</p>
+</div>
