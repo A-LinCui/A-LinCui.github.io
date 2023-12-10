@@ -55,7 +55,7 @@ Take the sequence-based schemes as an example. As mentioned above, although sequ
 
 <div align=center>
 <img src="./figures/arch_modeling.png">
-<br>Figure 4：Architecture modeling can enable a variety of applications.</div>
+Figure 4：Architecture modeling can enable a variety of applications.</div>
 
 Figure 4 illustrates the gerneral working flow and various applications of architecture modeling：
 
