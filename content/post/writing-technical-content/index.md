@@ -18,5 +18,5 @@ Before formally discussing architecture modeling, we first briefly describe the 
 ### Squential Architecture Representation
 
 <div align=center>
-<img src="./featured.png">
-<br>摩托车图片</div>
+<img src="./figures/arch_modeling.png">
+<br>Figure 4：Architecture modeling can enable a variety of applications.</div>
