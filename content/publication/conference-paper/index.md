@@ -53,9 +53,7 @@ featured: true
 
 url_pdf: 'https://arxiv.org/pdf/2302.00932.pdf'
 url_code: 'https://github.com/walkerning/aw_nas'
-url_dataset: ''
 url_poster: 'https://underline.io/events/380/sessions/14443/lecture/68309-dynamic-ensemble-of-low-fidelity-experts-mitigating-nas-cold-start?tab=Poster'
-url_project: ''
 url_slides: 'https://app.underline.io/downloadable_materials/lectures/68309/slideshow'
 url_source: 'https://github.com/HugoBlox/hugo-blox-builder'
 url_video: 'https://underline.io/lecture/68309-dynamic-ensemble-of-low-fidelity-experts-mitigating-nas-cold-start'
