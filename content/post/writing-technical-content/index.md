@@ -21,7 +21,7 @@ However, the drawbacks of sequential architecture representation are also promin
 
 <div align=center>
 <img src="./figures/darts.png">
-<br>Figure 1：An example search space. We search for operations on the edges from four candidate operations: none (denoted by 0), red (denoted by 1), green (denoted by 2) and blue (denoted by 3).</div>
+Figure 1：An example search space. We search for operations on the edges from four candidate operations: none (denoted by 0), red (denoted by 1), green (denoted by 2) and blue (denoted by 3).</div>
 
 ### Adjacent Matrix Architecture Representation
 Neural architecture search is always performed in cell-based topological search spaces (e.g., DARTS [Liu et al., ICLR 2019] , ENAS [Pham et al., ICML 2018]). Since the cell can be modeled as a directed acyclic graph (DAG), we can represent the architecture with an adjacency matrix. For example, the architecture in Figure 1(d) can be represented as a 4 x 4 matrix A in Figure 1 (e), where A[i][j] denotes the selected operation index from node j to node i.
@@ -36,7 +36,7 @@ In this section, we start with the predictor-based neural architecture search to
 
 <div align=center>
 <img src="./figures/predictor-framework.png">
-<br>Figure 2: Typical architecture performance predictor framework. The architecture is first encoded by an architecture encoder and then fed into the MLP to output the final prediction score.</div>
+Figure 2: Typical architecture performance predictor framework. The architecture is first encoded by an architecture encoder and then fed into the MLP to output the final prediction score.</div>
 
 <br>
 
@@ -46,7 +46,7 @@ For predictor-based neural architecture search, existing architecture encoding s
 
 <div align=center>
 <img src="./figures/TA-GATES-precision.png">
-<br>Figure 3：Precision@K comparison on the validation split of four benchmarks. X-axis：K; Y-axis: Precision. The training proportion is 5% on NB101 [Ying et al., ICML 2019], NB201 [Dong et al., ICLR 2020] , and NB301 [Siems et al., 2020], and 50% on NDS ENAS [Radosavovic et al., 2019].</div>
+Figure 3：Precision@K comparison on the validation split of four benchmarks. X-axis：K; Y-axis: Precision. The training proportion is 5% on NB101 [Ying et al., ICML 2019], NB201 [Dong et al., ICLR 2020] , and NB301 [Siems et al., 2020], and 50% on NDS ENAS [Radosavovic et al., 2019].</div>
 
 <br>
 
@@ -59,7 +59,9 @@ Take the sequence-based schemes as an example. As mentioned above, although sequ
 
 <div align=center>
 <img src="./figures/arch_modeling.png">
-<br>Figure 4：Architecture modeling can enable a variety of applications.</div>
+Figure 4：Architecture modeling can enable a variety of applications.</div>
+
+<br>
 
 Figure 4 illustrates the gerneral working flow and various applications of architecture modeling：
 
@@ -86,7 +88,9 @@ To alleviate the need for training data for predictor-based neural architecture 
 
 <div align=center>
 <img src="./figures/improve_search.jpg">
-<br>Figure 5：Our researches  (Left: GATES; Middle: TA-GATES; Right: DELE) on architecture modeling in predictor-based neural architecture search.</div>
+Figure 5：Our researches  (Left: GATES; Middle: TA-GATES; Right: DELE) on architecture modeling in predictor-based neural architecture search.</div>
+
+<br>
 
 **A Generic Graph-based Neural Architecture Encoding Scheme for Predictor-based NAS (GATES)**
 
@@ -96,7 +100,9 @@ As described above, traditional architecture encoders treat architecture as a se
 
 <div align=center>
 <img src="./figures/GATES-flow.png">
-<br>Figure 6：Illustration of the GATES encoding flow.</div>
+Figure 6：Illustration of the GATES encoding flow.</div>
+
+<br>
 
 **TA-GATES: An Encoding Scheme for Neural Network Architectures**
 
@@ -114,7 +120,9 @@ To get a more discriminative encoding, the intuition behind the principled desig
 
 <div align=center>
 <img src="./figures/TA-GATES-search.png">
-<br>Table 1：Accuracy of the discovered architectures on NB101, NB201, and NB301 with different encoders. On all benchmarks, the predictors are trained with a training proportion of 1%.</div>
+Table 1：Accuracy of the discovered architectures on NB101, NB201, and NB301 with different encoders. On all benchmarks, the predictors are trained with a training proportion of 1%.</div>
+
+<br>
 
 Table 1 shows the accuracies of the discovered architectures on NAS-Bench-101 / 201 / 301 with different architectures. Compared with MLP, LSTM, and GCN, GATES discovered better architectures across different search spaces. Further, TA-GATES achieves better results than GATES. For example, on NAS-Bench-201, the average accuracy of discovered architectures by TA-GATES (0.9393) is 0.44% better than that by GATES (0.9349). These results demonstrate the effectiveness of GATES and TA-GATES.
 
