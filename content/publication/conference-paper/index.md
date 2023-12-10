@@ -62,7 +62,7 @@ url_video: 'https://underline.io/lecture/68309-dynamic-ensemble-of-low-fidelity-
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
 image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/pLCdAaMFLTE)'
+  caption: 'Illustration of our motivation and our proposed dynamic ensemble predictor framework.'
   focal_point: ''
   preview_only: false
 
