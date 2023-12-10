@@ -64,7 +64,7 @@ url_video: 'https://underline.io/lecture/68309-dynamic-ensemble-of-low-fidelity-
 image:
   caption: 'Illustration of the proposed dynamic ensemble predictor framework.'
   focal_point: ''
-  preview_only: true
+  preview_only: false
 
 # Associated Projects (optional).
 #   Associate this publication with one or more of your projects.
