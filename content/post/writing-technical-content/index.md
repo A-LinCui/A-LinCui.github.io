@@ -21,7 +21,7 @@ However, the drawbacks of sequential architecture representation are also promin
 
 <div align=center>
 <img src="./figures/darts.png">
-Figure 1：An example search space. We search for operations on the edges from four candidate operations: none (denoted by 0), red (denoted by 1), green (denoted by 2) and blue (denoted by 3).</div>
+Figure 1：An example search space. We search for operations on the edges from four candidate operations: none (denoted by 0), red (denoted by 1), green (denoted by 2) and blue (denoted by 3).<br></div>
 
 ### Adjacent Matrix Architecture Representation
 Neural architecture search is always performed in cell-based topological search spaces (e.g., DARTS [Liu et al., ICLR 2019] , ENAS [Pham et al., ICML 2018]). Since the cell can be modeled as a directed acyclic graph (DAG), we can represent the architecture with an adjacency matrix. For example, the architecture in Figure 1(d) can be represented as a 4 x 4 matrix A in Figure 1 (e), where A[i][j] denotes the selected operation index from node j to node i.
@@ -36,7 +36,7 @@ In this section, we start with the predictor-based neural architecture search to
 
 <div align=center>
 <img src="./figures/predictor-framework.png">
-Figure 2: Typical architecture performance predictor framework. The architecture is first encoded by an architecture encoder and then fed into the MLP to output the final prediction score.</div>
+Figure 2: Typical architecture performance predictor framework. The architecture is first encoded by an architecture encoder and then fed into the MLP to output the final prediction score.<br></div>
 
 For predictor-based neural architecture search, existing architecture encoding schemes mainly include sequence and graph-based schemes. Sequence-based schemes use specific serialization methods to convert architectural decisions into sequences (sequential architecture representation), which are then fed into a multilayer perceptron or recurrent neural network to obtain architectural representations. Graph-based architecture encoders apply graph convolutional networks to encode neural network architectures. Architecture predictors can generally give an approximate performance estimate of architecture in milliseconds and are, therefore, very efficient.
 
