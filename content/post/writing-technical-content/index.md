@@ -178,7 +178,7 @@ Gibbon proposes an evolutionary search algorithm with adaptive parameter priorit
 
 <div align=center>
 <img src="./figures/GIBBON.png">
-Illustration of the Gibbon framework.</div>
+Figure 10: Illustration of the Gibbon framework.</div>
 
 <br>
 
