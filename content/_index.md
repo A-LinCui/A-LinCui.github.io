@@ -10,7 +10,7 @@ sections:
     content:
       title: Hugo Academic Theme
       image:
-        filename: zhihu.jpeg
+        filename: self_portrait.png
       cta:
         label: '**Get Started**'
         url: https://hugoblox.com/templates/
