@@ -20,7 +20,7 @@ tags:
   - NAS
 ---
 
-<div style="text-align: justify;">
+<div style="text-align:justify; font-size:14px;">
 
 With the wide application of deep learning technology, the updated speed of neural architecture and demand for computing power is increasing daily. As a result, there is an urgent need for multi-level optimization for task performance and hardware overhead, from neural network architecture to hardware architecture.
 

@@ -20,7 +20,7 @@ tags:
 
 ---
 
-<div style="text-align: justify;">
+<div style="text-align:justify; font-size:14px;">
 
 ### The Era's Challenges in Neural Architecture Search
 Looking back at history, modern neural architecture search (NAS) technology emerged in 2016, when convolutional neural networks (CNNs) were highly favored for computer vision tasks. Although CNNs are primarily composed of convolutions, the different combinations of various modules create diverse network architectures. Different CNN architectures are suitable for different tasks and hardwares, thus leading to a thriving research field related to architectures, such as SqueezeNet, MobileNet, and others. Subsequently, with the introduction of methods like differentiable search, predictor-based search, one-shot evaluation strategies, and more, the entire research field entered its golden age around 2018. During this time, architectures discovered through NAS were indeed applied in practical scenarios, such as MobileNet-V3.
