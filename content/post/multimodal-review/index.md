@@ -21,7 +21,7 @@ tags:
 ---
 
 <div style="text-align:justify; font-size:14px;">
-*Human knowledge is so vast, yet humans themselves are so small.*
+<i>Human knowledge is so vast, yet humans themselves are so small.</i>
 
 <hr>
 
