@@ -23,7 +23,7 @@ tags:
 <div style="text-align:justify; font-size:14px;">
 *Human knowledge is so vast, yet humans themselves are so small.*
 
-----
+<hr>
 
 The competition in the field of computer vision is so fierce that I have to extend my silly research into the area of multimodality.
 
