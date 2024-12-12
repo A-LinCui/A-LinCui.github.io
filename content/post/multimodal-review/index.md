@@ -44,13 +44,18 @@ Multimodal refers to situations where multiple modalities are involved.
 
 ### Why multimodal
 <ul>
-  <li>**Real**: Human perception of the external world is multimodal.</li>
-  <li>**Practical**: The internet and various applications are primarily multimodal.</li>
-  <li>**Effective**: Multimodal data contains richer information and is often easier to obtain (available textual information is nearly exhausted).</li>
+  <li><b>Real</b>: Human perception of the external world is multimodal.</li>
+  <li><b>Practical</b>: The internet and various applications are primarily multimodal.</li>
+  <li><b>Effective</b>: Multimodal data contains richer information and is often easier to obtain (available textual information is nearly exhausted).</li>
 </ul>
 
 ### Multimodal research challenges
+<div align=center>
+<img src="./figures/research_core_challenges.png">
+Core research challenges in multimodal learning [Liang et al., 2022].
+<br>
 
+I recommend everyone to read this review [Liang et al., 2022], which goes beyond specific techniques to model and understand multimodal problems at a higher level.
 
 ## References
 [Liang et al., 2022] Liang, Paul Pu, Amir Zadeh, and Louis-Philippe Morency. <a href="https://arxiv.org/abs/2209.03430" class="no-underline" style="color:blue">"Foundations and recent trends in multimodal machine learning: Principles, challenges, and open questions."</a> arXiv preprint arXiv:2209.03430 (2022).
