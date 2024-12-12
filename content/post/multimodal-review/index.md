@@ -52,8 +52,8 @@ Multimodal refers to situations where multiple modalities are involved.
 ### Multimodal research challenges
 <div align=center>
 <img src="./figures/research_core_challenges.png">
-Core research challenges in multimodal learning [Liang et al., 2022].
-<br>
+Figure 1: Core research challenges in multimodal learning [Liang et al., 2022].
+</div>
 
 I recommend everyone to read this review [Liang et al., 2022], which goes beyond specific techniques to model and understand multimodal problems at a higher level.
 
