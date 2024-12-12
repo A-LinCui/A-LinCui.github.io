@@ -58,6 +58,19 @@ Figure 1: Core research challenges in multimodal learning [Liang et al., 2022].
 
 I recommend everyone to read this review [Liang et al., 2022], which goes beyond specific techniques to model and understand multimodal problems at a higher level.
 
+### Example Applications
+Take the applications between text and image as an example.
+
+<ul>
+  <li>Retrieval (Image&lt;&gt;Text)</li>
+  <li>Caption (Image-&gt;Text)</li>
+  <li>Generation (Text-&gt;Image)</li>
+  <li>Visual Question Answering (Image + Text -&gt; Text)</li>
+  <li>Multimodal Classification (Image + Text -&gt; Label)</li>
+  <li> Better Understanding & Generation (Image + Text -&gt Label/Text)
+</ul>
+
+
 ## References
 [Liang et al., 2022] Liang, Paul Pu, Amir Zadeh, and Louis-Philippe Morency. <a href="https://arxiv.org/abs/2209.03430" class="no-underline" style="color:blue">"Foundations and recent trends in multimodal machine learning: Principles, challenges, and open questions."</a> arXiv preprint arXiv:2209.03430 (2022).
 
