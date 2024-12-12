@@ -79,7 +79,12 @@ Since the mid-20th century, multimodal learning has remained a major research ar
 #### Typical Early Studies
 In the early 2000s, fundamental modern deep learning components, such as MLP and word embedding, were already in use. By the middle of the decade, deep learning models (e.g., CNN, RNN, GNN) had already achieved state-of-the-art performance in various tasks. Additionally, generative models like GANs also appeared. At the end of the decode, the widespread application of Transformer provided a similar paradigm for different tasks, driving the overall development of the field of artificial intelligence. Until today, deep learning technology is still on the rise.
 
+<a href="https://dl.acm.org/doi/10.5555/2283696.2283856" class="no-underline" style="color:blue">WSABIE [Weston et al., 2020]</a>
+
+
 ## References
 [Liang et al., 2022] Liang, Paul Pu, Amir Zadeh, and Louis-Philippe Morency. <a href="https://arxiv.org/abs/2209.03430" class="no-underline" style="color:blue">"Foundations and recent trends in multimodal machine learning: Principles, challenges, and open questions."</a> arXiv preprint arXiv:2209.03430 (2022).
+
+[Weston et al., 2011] Weston, Jason, Samy Bengio, and Nicolas Usunier. <a href="https://dl.acm.org/doi/10.5555/2283696.2283856" class="no-underline" style="color:blue">"Wsabie: Scaling up to large vocabulary image annotation."</a> Twenty-Second International Joint Conference on Artificial Intelligence. 2011.
 
 </div>

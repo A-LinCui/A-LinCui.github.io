@@ -166,7 +166,7 @@ Table 2：The Kendall’s Tau (average over five runs) of using different encode
 #### Architecture Modeling for Improving One-shot Estimation
 Besides predictor-based NAS, architecture modeling is also significant to one-shot evaluation.
 
-One-shot NAS shares operation parameters among candidate architectures in a “supernet” and trains this supernet to evaluate all sampled candidate architectures. However, one-shot NAS suffers from the poor ranking correlation between one-shot estimations and stand-alone estimations. And the excessive sharing of parameters, i.e., the large sharing extent, has been widely regarded as the most critical factor causing unsatisfying performance estimation.
+One-shot NAS shares operation parameters among candidate architectures in a "supernet" and trains this supernet to evaluate all sampled candidate architectures. However, one-shot NAS suffers from the poor ranking correlation between one-shot estimations and stand-alone estimations. And the excessive sharing of parameters, i.e., the large sharing extent, has been widely regarded as the most critical factor causing unsatisfying performance estimation.
 
 <a href="https://arxiv.org/abs/2207.07868" class="no-underline" style="color:blue">CLOSE: Curriculum Learning On the Sharing Extent Towards Better One-shot NAS</a>
 
