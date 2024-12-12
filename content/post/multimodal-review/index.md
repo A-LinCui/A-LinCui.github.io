@@ -70,6 +70,14 @@ Take the applications between text and image as an example.
   <li> Better Understanding & Generation (Image + Text -&gt Label/Text)
 </ul>
 
+## Model Evolution
+Multimodal learning is not confined to specific tasks. Actually, it spans multiple technological eras and exhibits many common characteristics across these eras. Therefore, this section will primarily follow the timeline of technological eras to trace the evolution of multimodal model structures, thereby revealing the development trajectory of multimodal learning. In particular, vision and language are the most extensively studied tasks, and this section will focus on detailed discussions through multimodal tasks between images and text.
+
+### Early Models
+Since the mid-20th century, multimodal learning has remained a major research area in artificial intelligence. Given that deep learning has become the prevailing method for realizing artificial intelligence today, this section begins with an introduction to research related to neural networks.
+
+#### Typical Early Studies
+In the early 2000s, fundamental modern deep learning components, such as MLP and word embedding, were already in use. By the middle of the decade, deep learning models (e.g., CNN, RNN, GNN) had already achieved state-of-the-art performance in various tasks. Additionally, generative models like GANs also appeared. At the end of the decode, the widespread application of Transformer provided a similar paradigm for different tasks, driving the overall development of the field of artificial intelligence. Until today, deep learning technology is still on the rise.
 
 ## References
 [Liang et al., 2022] Liang, Paul Pu, Amir Zadeh, and Louis-Philippe Morency. <a href="https://arxiv.org/abs/2209.03430" class="no-underline" style="color:blue">"Foundations and recent trends in multimodal machine learning: Principles, challenges, and open questions."</a> arXiv preprint arXiv:2209.03430 (2022).
