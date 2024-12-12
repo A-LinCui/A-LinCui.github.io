@@ -21,6 +21,8 @@ tags:
 ---
 
 <div style="text-align:justify; font-size:14px;">
+*Human knowledge is so vast, yet humans themselves are so small.*
+----
 
 The competition in the field of computer vision is so fierce that I have to extend my silly research into the area of multimodality.
 
@@ -40,7 +42,17 @@ A previous review [Liang et al., 2022] gives another definition:
 > A modality refers to a way in which a natural phenomenon is perceived or expressed.
 Multimodal refers to situations where multiple modalities are involved.
 
+### Why multimodal
+<ul>
+  <li>**Real**: Human perception of the external world is multimodal.</li>
+  <li>**Practical**: The internet and various applications are primarily multimodal.</li>
+  <li>**Effective**: Multimodal data contains richer information and is often easier to obtain (available textual information is nearly exhausted).</li>
+</ul>
+
+### Multimodal research challenges
+
+
 ## References
-[Liang et al., 2022] Liang, Paul Pu, Amir Zadeh, and Louis-Philippe Morency. <a href="https://arxiv.org/abs/2209.03430" class="no-underline" style="color:blue">"Foundations and recent trends in multimodal machine learning: Principles, challenges, and open questions."</a>arXiv preprint arXiv:2209.03430 (2022).
+[Liang et al., 2022] Liang, Paul Pu, Amir Zadeh, and Louis-Philippe Morency. <a href="https://arxiv.org/abs/2209.03430" class="no-underline" style="color:blue">"Foundations and recent trends in multimodal machine learning: Principles, challenges, and open questions."</a> arXiv preprint arXiv:2209.03430 (2022).
 
 </div>
