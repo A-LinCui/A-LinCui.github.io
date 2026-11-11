@@ -307,6 +307,12 @@
 
   li {
     white-space: nowrap;
+
+    // The fixed desktop sidebar is narrower than a long line such as the
+    // employer name; allow wrapping there so it never grows a scrollbar.
+    @include breakpoint($large) {
+      white-space: normal;
+    }
   }
 
   a {
