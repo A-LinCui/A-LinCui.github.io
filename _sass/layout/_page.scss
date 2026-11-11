@@ -11,6 +11,9 @@
   animation: intro 0.3s both;
   animation-delay: 0.35s;
 
+  /* grow to fill the viewport so the footer stays at the bottom on short pages */
+  flex: 1 0 auto;
+
   @include breakpoint($x-large) {
     max-width: $x-large;
   }
