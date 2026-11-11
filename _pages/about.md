@@ -52,6 +52,6 @@ redirect_from:
 </ul>
 
 <h2>📄 CV</h2>
-<p><a href="/files/resume.pdf"><i class="fas fa-file-pdf" aria-hidden="true"></i> PDF File</a></p>
+<p><a href="/files/resume.pdf" style="text-decoration: none;"><i class="fas fa-file-pdf" aria-hidden="true"></i> PDF File</a></p>
 
 </div>
