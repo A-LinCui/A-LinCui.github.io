@@ -13,6 +13,8 @@
 
   /* grow to fill the viewport so the footer stays at the bottom on short pages */
   flex: 1 0 auto;
+  /* a flex item with auto margins is not stretched, so set the width explicitly */
+  width: 100%;
 
   @include breakpoint($x-large) {
     max-width: $x-large;
