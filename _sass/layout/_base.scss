@@ -19,6 +19,11 @@ body {
   font-family: $global-font-family;
   line-height: 1.5;
 
+  /* sticky footer: push it to the bottom even when the page is shorter than the viewport */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
   &.overflow--hidden {
     /* when primary navigation is visible, the content in the background won't scroll */
     overflow: hidden;
