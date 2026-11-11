@@ -49,4 +49,9 @@ redirect_from:
   <li><b>2017.08 - 2021.06：</b> BSc, Department of Engineering Physics, Tsinghua University.</li>
 </ul>
 
+<h2>📄 CV</h2>
+<ul>
+  <li><a href="/files/resume.pdf">Download my CV (PDF)</a></li>
+</ul>
+
 </div>
