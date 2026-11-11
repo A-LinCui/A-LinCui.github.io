@@ -115,6 +115,11 @@
   .page__meta {
     margin: 0 0 4px;
   }
+
+  /* half the default heading gap so list entries sit closer together */
+  .archive__item-title {
+    margin-top: 1em;
+  }
 }
 
 
