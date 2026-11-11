@@ -15,7 +15,7 @@ name                     : &name "A-LinCui"
 description              : &description "Junbo Zhao's academic website"
 url                      : https://a-lincui.github.io
 baseurl                  : ""
-repository               : "a-lincui/a-lincui.github.io"
+repository               : "A-LinCui/A-LinCui.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
