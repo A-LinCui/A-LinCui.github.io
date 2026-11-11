@@ -42,6 +42,8 @@ redirect_from:
   <li><i>TA-GATES: An Encoding Scheme for Neural Network Architectures.</i> Xuefei Ning<sup>*</sup>, Zixuan Zhou<sup>*</sup>, <b>Junbo Zhao</b>, Tianchen Zhao, Yiping Deng, Changcheng Tang, Shuang Liang, Huazhong Yang, Yu Wang. NeurIPS2022. <font color="red">(Spotlight)</font></li>
 </ul>
 
+<p>* indicates equal contribution.</p>
+
 <h2>📖 Experience</h2>
 <ul>
   <li><b>2025.09 - now：</b> PhD Student, Department of Computer Science and Engineering, Shanghai Jiao Tong University.</li>
@@ -51,7 +53,7 @@ redirect_from:
 
 <h2>📄 CV</h2>
 <ul>
-  <li><a href="/files/resume.pdf">Download my CV (PDF)</a></li>
+  <li><a href="/files/resume.pdf">PDF File</a></li>
 </ul>
 
 </div>
